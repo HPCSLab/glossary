@@ -21,12 +21,18 @@ updated: 2026-10-06
 
 [[FAST]] 2018の論文 "The Full Path to Full-Path Indexing"（Zhanら）は、この弱点を解消した。Bε木に、ある接頭辞を持つ全てのキーの接頭辞を不可分に置き換えるrange renameの操作を加え、木を元と先の位置で切り分けてポインタを付け替えることで、その費用を部分木の大きさに比例しないようにした。これを実装したBetrFS 0.4は、フルパスインデックスに戻りながら、名前の変更の性能を間接参照に基づくファイルシステムと同等に保ち、再帰的なgrepを前の版の1.5倍、ランダムな書き込みを1.2倍速くした。
 
+HPC向けの[[Ad Hoc File System|アドホックファイルシステム]]の[[GekkoFS]]と[[CHFS]]も、完全なパス名をキーとしてメタデータとデータを格納する。両者は、パス名（データの場合はパス名とチャンクの番号）のハッシュ値によって担当のサーバを決める。このため、ファイルの[[Metadata|メタデータ]]は、親ディレクトリを順にたどることなく、一回の問い合わせで得られる。一方、同じディレクトリのエントリはハッシュによって全てのサーバに散らばるため、ディレクトリの一覧（readdir）は全てのサーバに問い合わせて集める必要がある。また、名前を変えるとキーとハッシュ値が変わり、データとメタデータを別のサーバに移す必要があるため、名前の変更が困難である。CHFSはrenameを提供しておらず、GekkoFSでもrenameは既定では無効の実験的な機能である。
+
 ## 関係
 - 対比: [[Inode]]（間接参照により名前と位置を分ける）
 - 使う / 使われる: [[B-epsilon Tree]], [[Key-Value Store]]
-- 関連: [[rename]], [[Metadata]], [[FAST]]
+- 使う / 使われる: [[GekkoFS]], [[CHFS]]
+- 関連: [[rename]], [[Metadata]], [[FAST]], [[Ad Hoc File System]]
 
 ## 出典
 - [The Full Path to Full-Path Indexing - USENIX FAST 2018](https://www.usenix.org/conference/fast18/presentation/zhan)
 - [論文PDF](https://www.usenix.org/system/files/conference/fast18/fast18-zhan.pdf)
 - [BetrFS: A Right-Optimized Write-Optimized File System - USENIX FAST 2015](https://www.usenix.org/conference/fast15/technical-sessions/presentation/jannen)
+- [GekkoFS README（Rename） - BSC GitLab](https://storage.bsc.es/gitlab/hpc/gekkofs/-/blob/master/README.md)
+- [gekkofs/src/common/rpc/distributor.cpp - BSC GitLab](https://storage.bsc.es/gitlab/hpc/gekkofs/-/blob/master/src/common/rpc/distributor.cpp)（パス名のハッシュによるサーバの決定）
+- [otatebe/chfs - GitHub](https://github.com/otatebe/chfs)（APIの一覧、`lib/path.c`、`lib/chfs.c`）
