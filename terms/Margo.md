@@ -1,5 +1,5 @@
 ---
-aliases: [mochi-margo, Mochi, Argobots, Thallium, User-Level Thread, ユーザレベルスレッド, ULT]
+aliases: [mochi-margo, Mochi, Thallium]
 tags: [term]
 maps: ["[[Parallel Computing]]", "[[Storage]]", "[[Network]]"]
 status: draft
@@ -7,7 +7,7 @@ updated: 2026-10-06
 ---
 # Margo（mochi-margo）
 
-> RPCフレームワーク[[Mercury]]と、ユーザレベルスレッドのライブラリArgobotsを組み合わせ、HPC向けのデータサービスを逐次的な書き方で実装できるようにするライブラリであり、Mochiプロジェクトの中核をなす。
+> RPCフレームワーク[[Mercury]]と、ユーザレベルスレッドのライブラリ[[Argobots]]を組み合わせ、HPC向けのデータサービスを逐次的な書き方で実装できるようにするライブラリであり、Mochiプロジェクトの中核をなす。
 
 ## 概要
 Mochiは、アルゴンヌ国立研究所、ロスアラモス国立研究所、カーネギーメロン大学、The HDF Groupの共同プロジェクトであり、HPC向けのストレージサービスを、再利用可能な部品（マイクロサービス）の組み合わせとして構築することを目指している。部品には、キーバリューストアのYokan、大きなデータを扱うWarabi、グループの管理を行うFlockなどがある。Margoは、これらの部品が共通に用いる実行基盤である。
@@ -18,7 +18,7 @@ Mercuryは、RPCとRDMAによる高速な通信を提供するが、そのAPIは
 Margoは、HPC向けのデータサービスや分散ストレージを研究で試作する際の基盤として用いられる。通信の性能をMercuryから得つつ、プログラムを逐次的に書けるため、サービスの論理に集中できる。性能を調べる際には、ユーザレベルスレッドの数や、通信の進行を担うスレッドの配置（専用のスレッドで進行させるか、処理と同じスレッドで行うか）の設定が、[[Latency|レイテンシ]]と処理能力に影響することに注意を要する。
 
 ## 関係
-- 使う / 使われる: [[Mercury]]（通信）, [[Key-Value Store]]（Yokanなどの部品）
+- 使う / 使われる: [[Mercury]]（通信）, [[Argobots]]（ユーザレベルスレッド）, [[Key-Value Store]]（Yokanなどの部品）
 - 関連: [[DAOS]], [[RDMA]], [[Parallel File System]], [[Latency]]
 
 ## 出典
