@@ -116,6 +116,7 @@ updated: 2026-10-05
 - [[Distributed File System]] — ネットワーク越しにファイルを共有するファイルシステムである。
 - [[Parallel File System]] — 複数のサーバにデータを分散し並列にI/Oを行うファイルシステムである。
 - [[Lustre]] — HPCで最も広く用いられる並列ファイルシステムの実装である。
+- [[EXAScaler]] — DDNが提供するLustreを基にした商用の並列ファイルシステムであり、PegasusやMiyabiが用いる。
 - [[Distributed Lock Manager]] — 複数のクライアントのキャッシュの一貫性を、ロックで保つ仕組みである。LustreではLDLMと呼ぶ。
 - [[IBM Storage Scale]] — 旧称GPFS。メタデータも分散して扱う共有ディスク型の並列ファイルシステムである。
 - [[BeeGFS]] — サーバがユーザ空間で動く、HPC向けの並列ファイルシステムである。
