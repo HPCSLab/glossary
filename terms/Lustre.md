@@ -26,7 +26,7 @@ Lustreは、役割の異なる3種類のサーバと、クライアントから�
 - 前提: [[POSIX]], [[Metadata]]
 - 使う / 使われる: [[ext4]]（ldiskfsの基盤）, [[ZFS]], [[Block Storage]]
 - 対比: [[IBM Storage Scale]], [[BeeGFS]]
-- 関連: [[MPI-IO]], [[Consistency Model]]
+- 関連: [[MPI-IO]], [[Consistency Model]], [[Lustre PCC]]
 
 ## 出典
 - [Introduction to Lustre - Lustre Wiki](https://wiki.lustre.org/Introduction_to_Lustre)

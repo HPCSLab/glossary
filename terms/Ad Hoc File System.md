@@ -25,7 +25,7 @@ updated: 2026-10-06
 - 上位概念: [[File System]]
 - 対比: [[Parallel File System]]（ジョブ間で共有される常設のファイルシステム）
 - 使う / 使われる: [[GekkoFS]], [[CHFS]], [[UnifyFS]], [[LLIO]]（アドホックファイルシステムの例）
-- 関連: [[SSD]], [[Intel Optane Persistent Memory]], [[FUSE]], [[Metadata]]
+- 関連: [[Node-local Storage]], [[Lustre PCC]], [[SSD]], [[Intel Optane Persistent Memory]], [[FUSE]], [[Metadata]]
 
 ## 出典
 - [Ad Hoc File Systems for High-Performance Computing (Brinkmann et al., Journal of Computer Science and Technology, 2020)](https://jcst.ict.ac.cn/EN/10.1007/s11390-020-9801-1)
