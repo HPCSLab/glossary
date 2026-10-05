@@ -15,7 +15,7 @@ ONNXは、2017年にFacebookとMicrosoftが始め、現在はLinux Foundationの
 ONNXのモデルは、演算子（オペレータ）を表すノードからなる、循環のない計算のグラフである。グラフは、入力、出力、学習済みの重みなどの定数（イニシャライザ）を持ち、Protocol Buffersの形式でファイルに保存される。演算子には、加算や乗算などの数学の演算、ReLUなどの活性化関数、畳み込み（Conv）やLSTMなどのニューラルネットワークの層、量子化のための演算などがある。演算子は版によって定義が変わることがあり、モデルはどの版の演算子の集合（opset）を用いるかを持つ。ONNXに対応するフレームワークは、これらの演算子の実装を提供する。
 
 ## どこで出てくるか
-PyTorchでは `torch.onnx.export()` でモデルをONNXの形式に書き出せる。書き出したモデルは、Microsoftが開発するONNX Runtimeなどで実行できる。ONNX Runtimeは、モデルのグラフを最適化し、利用できるハードウェアに応じて部分グラフに分け、それぞれを実行プロバイダ（execution provider）と呼ばれる、ハードウェアごとのライブラリに割り当てる。実行プロバイダには、CPUのほか、NVIDIAの[[CUDA]]とTensorRT、IntelのOpenVINO、AMDのROCmなどがある。ONNX Runtimeは、クラウドからモバイル、ブラウザまで多くの環境で動作する。
+[[PyTorch]]では `torch.onnx.export()` でモデルをONNXの形式に書き出せる。書き出したモデルは、Microsoftが開発するONNX Runtimeなどで実行できる。ONNX Runtimeは、モデルのグラフを最適化し、利用できるハードウェアに応じて部分グラフに分け、それぞれを実行プロバイダ（execution provider）と呼ばれる、ハードウェアごとのライブラリに割り当てる。実行プロバイダには、CPUのほか、NVIDIAの[[CUDA]]とTensorRT、IntelのOpenVINO、AMDのROCmなどがある。ONNX Runtimeは、クラウドからモバイル、ブラウザまで多くの環境で動作する。
 
 学習はPyTorchで行い、推論はONNXに書き出して別の環境で行う、というように、学習と推論の環境を分けたい場合に用いられる。
 
