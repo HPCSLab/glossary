@@ -19,7 +19,7 @@ Linuxの[[ext4]]（[[JBD2]]を用いる）と[[XFS]]は、いずれもジャー�
 
 ## 関係
 - 上位概念: [[File System]]
-- 対比: [[ZFS]], [[btrfs]]（コピーオンライト方式）
+- 対比: [[Copy-on-Write]]（[[ZFS]]、[[btrfs]]が採る方式）
 - 使う / 使われる: [[ext4]], [[XFS]], [[JBD2]]
 - 関連: [[Crash Consistency]], [[fsync]], [[Metadata]]
 

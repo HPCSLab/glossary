@@ -1,5 +1,5 @@
 ---
-aliases: [device mapper, device-mapper, デバイスマッパー, dm, dmsetup, dm-crypt, dm-verity, dm-thin, dm-flakey, dm-log-writes, /dev/mapper, LVM, LVM2]
+aliases: [device mapper, device-mapper, デバイスマッパー, dm, dmsetup, dm-crypt, dm-verity, dm-thin, dm-flakey, dm-log-writes, /dev/mapper]
 tags: [term]
 maps: ["[[Storage]]", "[[Operating System]]"]
 status: draft
@@ -12,7 +12,7 @@ updated: 2026-10-06
 ## 概要
 device mapperは、仮想的なブロックデバイスのセクタを、どの下位デバイスのどの位置に、どのような処理を施して対応させるかを、表（テーブル）によって定義する。表の各行は「開始セクタ、セクタ数、ターゲットの種類、ターゲットの引数」からなり、デバイスの領域ごとに異なるターゲットを割り当てられる。作成したデバイスは `/dev/mapper/<名前>`（実体は `/dev/dm-N`）として現れ、通常のブロックデバイスと同様に、その上にファイルシステムを作成したり、さらに別のdevice mapperデバイスを重ねたりできる。表の操作には、低水準のツール `dmsetup` を用いる。
 
-処理の内容はターゲットによって決まる。基本的なものとして、下位デバイスの一部をそのまま対応させる `linear`、複数のデバイスに縞状に分散させる `striped`、複製する `mirror`、0を返す `zero`、常にエラーを返す `error` がある。より高度なものとして、透過的な暗号化を行う `crypt`（dm-crypt）、読み込み時にハッシュ木でデータの改竄を検出する `verity`（dm-verity）、ブロックごとの完全性を検査する `integrity`、多数の仮想デバイスとスナップショットを一つの領域に格納するシンプロビジョニング（`thin`、`thin-pool`）、高速な装置を低速な装置のキャッシュとして用いる `cache`・`writecache` などがある。
+処理の内容はターゲットによって決まる。基本的なものとして、下位デバイスの一部をそのまま対応させる `linear`、複数のデバイスに縞状に分散させる `striped`、複製する `mirror`、0を返す `zero`、常にエラーを返す `error` がある。より高度なものとして、透過的な暗号化を行う `crypt`（dm-crypt）、読み込み時にハッシュ木でデータの改竄を検出する `verity`（dm-verity）、ブロックごとの完全性を検査する `integrity`、多数の仮想デバイスと[[Snapshot|スナップショット]]を一つの領域に格納するシンプロビジョニング（`thin`、`thin-pool`）、高速な装置を低速な装置のキャッシュとして用いる `cache`・`writecache` などがある。
 
 利用者が直接 `dmsetup` を使うことはまれであり、通常は上位のツールを介する。論理ボリューム管理のLVM2は、論理ボリュームをdevice mapperの `linear` や `striped` などのデバイスとして構成する。ディスク暗号化のLUKS（`cryptsetup`）はdm-cryptを用いる。
 
