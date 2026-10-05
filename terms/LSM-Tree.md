@@ -1,7 +1,7 @@
 ---
 aliases: [LSM Tree, LSM木, Log-Structured Merge-Tree, ログ構造化マージ木, Compaction, コンパクション, Memtable, SSTable, SST, Leveled Compaction, Tiered Compaction, Write Amplification, Read Amplification, Space Amplification]
 tags: [term]
-maps: ["[[Storage]]"]
+maps: ["[[Storage]]", "[[Data Structures]]"]
 status: draft
 updated: 2026-10-06
 ---
@@ -25,7 +25,7 @@ LSM木は、RocksDB、LevelDB、Cassandra、HBaseなど、多くの[[Key-Value S
 
 ## 関係
 - 使う / 使われる: [[Key-Value Store]]（LSM木を記憶エンジンとする）, [[Bloom Filter]]（読み込みの高速化）
-- 対比: B木（その場で更新する索引）
+- 対比: [[B-Tree]]（その場で更新する索引）
 - 関連: [[SSD]], [[Crash Consistency]], [[Latency]]
 
 ## 出典

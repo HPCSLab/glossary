@@ -1,7 +1,7 @@
 ---
 aliases: [ブルームフィルタ, ブルームフィルター, Bloom filter, False Positive, 偽陽性]
 tags: [term]
-maps: ["[[Storage]]"]
+maps: ["[[Storage]]", "[[Data Structures]]"]
 status: draft
 updated: 2026-10-06
 ---
