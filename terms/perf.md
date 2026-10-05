@@ -1,5 +1,5 @@
 ---
-aliases: [perf_events, perf stat, perf record, perf report, perf top, perf trace, Linux perf, Flame Graph, フレームグラフ, PMU, Hardware Performance Counter, ハードウェア性能カウンタ]
+aliases: [perf_events, perf stat, perf record, perf report, perf top, perf trace, Linux perf, PMU, Hardware Performance Counter, ハードウェア性能カウンタ]
 tags: [term]
 maps: ["[[Operating System]]", "[[Parallel Computing]]"]
 status: draft
@@ -14,7 +14,7 @@ updated: 2026-10-06
 
 `perf stat` は、プログラムの実行中に発生したイベントの回数を数える。サイクル数、命令数、キャッシュミス数、分岐予測ミス数などを計測でき、命令数をサイクル数で割ったIPC（1サイクルあたりの命令数）から、プロセッサがどれだけ効率よく動作しているかの見当を付けられる。`perf list` で利用可能なイベントの一覧を確認できる。
 
-`perf record` は、一定の間隔で実行中の命令の位置やコールスタックを標本として記録する（サンプリング）。`perf report` はその結果を関数ごとに集計して表示し、`perf annotate` はソースコードや機械語の命令単位で時間の多い箇所を示す。`perf top` は同様の集計を実時間で表示する。記録したコールスタックは、フレームグラフとして可視化されることが多い。フレームグラフは、横幅がその関数の現れた標本の割合を、縦方向が呼び出しの深さを表す図であり、横軸は時間の経過ではない。`perf trace` は、[[strace]]に似た[[System Call|システムコール]]の追跡を、より小さなオーバーヘッドで行う。
+`perf record` は、一定の間隔で実行中の命令の位置やコールスタックを標本として記録する（サンプリング）。`perf report` はその結果を関数ごとに集計して表示し、`perf annotate` はソースコードや機械語の命令単位で時間の多い箇所を示す。`perf top` は同様の集計を実時間で表示する。記録したコールスタックは、[[Flame Graph|フレームグラフ]]として可視化されることが多い。フレームグラフは、横幅がその関数の現れた標本の割合を、縦方向が呼び出しの深さを表す図であり、横軸は時間の経過ではない。`perf trace` は、[[strace]]に似た[[System Call|システムコール]]の追跡を、より小さなオーバーヘッドで行う。
 
 ## どこで出てくるか
 `perf` は、HPCアプリケーションの最適化において、どの関数が実行時間を占めているか（ホットスポット）を特定する最初の手段である。`perf stat` の結果から、性能がメモリアクセスで律速されているのか、演算で律速されているのかの手掛かりを得られ、[[Roofline Model|ルーフラインモデル]]などの分析につなげられる。カーネル内の時間も含めて計測できるため、I/Oやシステムコールのオーバーヘッドの分析にも用いられる。
