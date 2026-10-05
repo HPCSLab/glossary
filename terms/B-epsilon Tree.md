@@ -25,7 +25,7 @@ Bε木は、[[LSM-Tree|LSM木]]と並ぶ、代表的な書き込み最適化デ�
 - 上位概念: [[B-Tree]]（Bε木はB木の拡張である）
 - 対比: [[LSM-Tree]]（同じく書き込み最適化された索引）
 - 使う / 使われる: [[Key-Value Store]], [[File System]]（BetrFS）
-- 関連: [[SSD]], [[Latency]], [[FAST]]
+- 関連: [[SSD]], [[Latency]], [[FAST]], [[Full-Path Indexing]]
 
 ## 出典
 - [An Introduction to Bε-trees and Write-Optimization (Bender et al., ;login:, October 2015)](https://www.usenix.org/system/files/login/articles/login_oct15_05_bender.pdf)
