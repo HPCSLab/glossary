@@ -1,0 +1,73 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+env:
+  # Quartz v5 commit the site is built with. Bump deliberately.
+  QUARTZ_REF: 97a2d05f80c4c50534959b1d0d41cc4b3895625e
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout vault
+        uses: actions/checkout@v6
+        with:
+          path: vault
+          fetch-depth: 0 # git history for modified dates
+      - name: Checkout Quartz
+        uses: actions/checkout@v6
+        with:
+          repository: jackyzha0/quartz
+          ref: ${{ env.QUARTZ_REF }}
+          path: quartz
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+      - name: Prepare Quartz
+        working-directory: quartz
+        run: |
+          rm -rf content
+          ln -s ../vault content
+          cp ../vault/quartz.config.yaml quartz.config.yaml
+      - name: Install dependencies
+        working-directory: quartz
+        run: |
+          npm ci
+          # The theme is otherwise installed lazily during the build, which fails the first build.
+          npm install --no-save @quartz-themes/default@1.0.1
+          npx quartz plugin install --from-config
+      - name: Build
+        working-directory: quartz
+        run: |
+          npx quartz build
+          # Quartz writes baseUrl's host to CNAME; no custom domain is used.
+          rm -f public/CNAME
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: quartz/public
+
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

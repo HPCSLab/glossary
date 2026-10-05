@@ -8,9 +8,14 @@
 ```
 terms/   用語ノート（1用語1ファイル、フラット。サブフォルダは作らない）
 maps/    分野ごとの入口ノート（MOC）。用語を束ねて読む順を示す
+index.md トップページ。全 map へのリンクを置く
 ```
 
-これ以外のフォルダは作らない。
+これ以外のフォルダは作らない（例外：公開用の `.github/`）。map を追加・削除したら `index.md` も更新する。
+
+## 公開
+
+`main` への push で GitHub Actions（`.github/workflows/deploy.yml`）が [Quartz](https://quartz.jzhao.xyz/) でビルドし、GitHub Pages（https://hpcslab.github.io/tank/ ）に公開する。設定は `quartz.config.yaml`。リポジトリ内の全ノートが公開Webページになる。
 
 ## 基本ワークフロー
 
