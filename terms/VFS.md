@@ -1,7 +1,7 @@
 ---
 aliases: [Virtual File System, Virtual Filesystem Switch, 仮想ファイルシステム]
 tags: [term]
-maps: ["[[Storage]]"]
+maps: ["[[Storage]]", "[[Operating System]]"]
 status: draft
 updated: 2026-10-05
 ---

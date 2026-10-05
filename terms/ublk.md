@@ -1,7 +1,7 @@
 ---
 aliases: [Userspace Block Device, ublk_drv, ublksrv, ユーザ空間ブロックデバイス]
 tags: [term]
-maps: ["[[Storage]]"]
+maps: ["[[Storage]]", "[[Operating System]]"]
 status: draft
 updated: 2026-10-05
 ---

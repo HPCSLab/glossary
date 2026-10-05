@@ -1,7 +1,7 @@
 ---
 aliases: [ファイルディスクリプタ, ファイル記述子, fd, FD]
 tags: [term]
-maps: ["[[Storage]]"]
+maps: ["[[Storage]]", "[[Operating System]]"]
 status: draft
 updated: 2026-10-05
 ---

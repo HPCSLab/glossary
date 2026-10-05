@@ -1,7 +1,7 @@
 ---
 aliases: [mmap(), mmap(2), munmap, msync, Memory-mapped File, メモリマップドファイル, MAP_SHARED, MAP_PRIVATE, MAP_ANONYMOUS]
 tags: [term]
-maps: ["[[Storage]]"]
+maps: ["[[Storage]]", "[[Operating System]]"]
 status: draft
 updated: 2026-10-06
 ---

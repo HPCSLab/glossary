@@ -1,7 +1,7 @@
 ---
 aliases: [Multi-Queue Block IO Queueing Mechanism, Multi-Queue Block Layer, ブロック層, Block Layer, I/O Scheduler, I/Oスケジューラ, mq-deadline]
 tags: [term]
-maps: ["[[Storage]]"]
+maps: ["[[Storage]]", "[[Operating System]]"]
 status: draft
 updated: 2026-10-05
 ---

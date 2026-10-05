@@ -1,7 +1,7 @@
 ---
 aliases: [Portable Operating System Interface, IEEE Std 1003.1, POSIX.1, ポジックス]
 tags: [term]
-maps: ["[[Storage]]"]
+maps: ["[[Storage]]", "[[Operating System]]"]
 status: draft
 updated: 2026-10-05
 ---

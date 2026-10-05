@@ -1,7 +1,7 @@
 ---
 aliases: [Filesystem in Userspace, libfuse, fusermount, /dev/fuse]
 tags: [term]
-maps: ["[[Storage]]"]
+maps: ["[[Storage]]", "[[Operating System]]"]
 status: draft
 updated: 2026-10-05
 ---

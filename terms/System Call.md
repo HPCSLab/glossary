@@ -1,7 +1,7 @@
 ---
 aliases: [システムコール, syscall, Syscall, システム呼び出し, vDSO, errno]
 tags: [term]
-maps: ["[[Storage]]"]
+maps: ["[[Storage]]", "[[Operating System]]"]
 status: draft
 updated: 2026-10-05
 ---
