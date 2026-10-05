@@ -1,7 +1,7 @@
 ---
 aliases: [レイテンシ, 遅延, 待ち時間, Tail Latency, テールレイテンシ, αβモデル, Hockney Model]
 tags: [term]
-maps: ["[[Parallel Computing]]", "[[Storage]]"]
+maps: ["[[Parallel Computing]]", "[[Storage]]", "[[Network]]"]
 status: draft
 updated: 2026-10-05
 ---

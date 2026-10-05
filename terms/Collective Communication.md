@@ -1,7 +1,7 @@
 ---
 aliases: [集団通信, Collective, Collective Operation, 集団操作, Allreduce, MPI_Allreduce, Broadcast, Bcast, Alltoall, Allgather, Reduce-Scatter, Barrier, NCCL, Ring Allreduce]
 tags: [term]
-maps: ["[[Parallel Computing]]"]
+maps: ["[[Parallel Computing]]", "[[Network]]"]
 status: draft
 updated: 2026-10-06
 ---

@@ -1,7 +1,7 @@
 ---
 aliases: [リトルの法則, Little]
 tags: [term]
-maps: ["[[Parallel Computing]]"]
+maps: ["[[Parallel Computing]]", "[[Network]]"]
 status: draft
 updated: 2026-10-05
 ---

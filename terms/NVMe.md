@@ -1,7 +1,7 @@
 ---
 aliases: [NVM Express, NVMe SSD, NVMe-oF, NVMe over Fabrics, Namespace, 名前空間]
 tags: [term]
-maps: ["[[Storage]]"]
+maps: ["[[Storage]]", "[[Network]]"]
 status: draft
 updated: 2026-10-05
 ---

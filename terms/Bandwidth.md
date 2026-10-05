@@ -1,7 +1,7 @@
 ---
 aliases: [バンド幅, 帯域幅, 帯域, Throughput, スループット, Memory Bandwidth, メモリバンド幅]
 tags: [term]
-maps: ["[[Parallel Computing]]", "[[Storage]]"]
+maps: ["[[Parallel Computing]]", "[[Storage]]", "[[Network]]"]
 status: draft
 updated: 2026-10-05
 ---

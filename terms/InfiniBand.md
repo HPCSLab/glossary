@@ -1,7 +1,7 @@
 ---
 aliases: [インフィニバンド, IB, HCA, Subnet Manager, サブネットマネージャ, Fat Tree, ファットツリー]
 tags: [term]
-maps: ["[[Parallel Computing]]"]
+maps: ["[[Parallel Computing]]", "[[Network]]"]
 status: draft
 updated: 2026-10-05
 ---
@@ -17,7 +17,7 @@ InfiniBandは、1999年に競合していた二つの規格（IntelらのNGIOと
 ネットワークは、各ノードに搭載したアダプタ（HCA: Host Channel Adapter）とスイッチから構成されるスイッチドファブリックである。サブネット内の経路設定やアドレスの割り当ては、サブネットマネージャと呼ばれるソフトウェアが集中的に行う。また、受信側の空き容量を確認してから送信するクレジットベースのフロー制御により、混雑時にもパケットを破棄しない。HPCシステムでは、スイッチを多段に組み合わせ、上位の階層ほど多くの帯域を持たせるファットツリーなどのトポロジで接続されることが多い。
 
 ## どこで出てくるか
-多くのスーパーコンピュータとHPCクラスタで、計算ノード間の[[MPI]]通信と、[[Parallel File System|並列ファイルシステム]]へのアクセスの両方にInfiniBandが用いられる。通信性能の評価では、ネットワークの世代、リンクの本数、トポロジ、ノード間のスイッチの段数を把握する必要がある。同じスイッチに接続されたノード同士と、上位のスイッチを経由するノード同士とでは、レイテンシや競合の程度が異なるためである。状態の確認には `ibstat` や `ibv_devinfo` を、性能の測定にはperftestの `ib_write_bw`・`ib_write_lat` や、MPIレベルのOSU Micro-Benchmarksを用いる。Ethernet上でRDMAを行うRoCEは、InfiniBandと同じverbsのインタフェースを用いるため、ソフトウェアの多くを共通に利用できる。
+多くのスーパーコンピュータとHPCクラスタで、計算ノード間の[[MPI]]通信と、[[Parallel File System|並列ファイルシステム]]へのアクセスの両方にInfiniBandが用いられる。通信性能の評価では、ネットワークの世代、リンクの本数、トポロジ、ノード間のスイッチの段数を把握する必要がある。同じスイッチに接続されたノード同士と、上位のスイッチを経由するノード同士とでは、レイテンシや競合の程度が異なるためである。状態の確認には `ibstat` や `ibv_devinfo` を、性能の測定にはperftestの `ib_write_bw`・`ib_write_lat` や、MPIレベルのOSU Micro-Benchmarksを用いる。Ethernet上でRDMAを行う[[RoCE]]は、InfiniBandと同じ[[Verbs|verbs]]のインタフェースを用いるため、ソフトウェアの多くを共通に利用できる。
 
 ## 関係
 - 使う / 使われる: [[RDMA]], [[MPI]], [[Lustre]]
