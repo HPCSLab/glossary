@@ -25,7 +25,7 @@ LSM木は、RocksDB、LevelDB、Cassandra、HBaseなど、多くの[[Key-Value S
 
 ## 関係
 - 使う / 使われる: [[Key-Value Store]]（LSM木を記憶エンジンとする）, [[Bloom Filter]]（読み込みの高速化）
-- 対比: [[B-Tree]]（その場で更新する索引）
+- 対比: [[B-Tree]]（その場で更新する索引）, [[B-epsilon Tree]]（同じく書き込み最適化された索引）
 - 関連: [[SSD]], [[Crash Consistency]], [[Latency]]
 
 ## 出典
