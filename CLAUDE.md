@@ -15,7 +15,7 @@ index.md トップページ。全 map へのリンクを置く
 
 ## 公開
 
-`main` への push で GitHub Actions（`.github/workflows/deploy.yml`）が [Quartz](https://quartz.jzhao.xyz/) でビルドし、GitHub Pages（https://hpcslab.github.io/tank/ ）に公開する。設定は `quartz.config.yaml`。リポジトリ内の全ノートが公開Webページになる。
+`main` への push で GitHub Actions（`.github/workflows/deploy.yml`）が [Quartz](https://quartz.jzhao.xyz/) でビルドし、GitHub Pages（https://hpcslab.github.io/glossary/ ）に公開する。設定は `quartz.config.yaml`。リポジトリ内の全ノートが公開Webページになる。
 
 ## 基本ワークフロー
 

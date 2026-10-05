@@ -1,12 +1,12 @@
 # Quartz config for the GitHub Pages build (.github/workflows/deploy.yml).
 configuration:
-  pageTitle: tank
+  pageTitle: glossary
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
   analytics: null
   locale: ja-JP
-  baseUrl: hpcslab.github.io/tank
+  baseUrl: hpcslab.github.io/glossary
   ignorePatterns:
     - CLAUDE.md
     - .claude
