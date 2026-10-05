@@ -24,7 +24,7 @@ CXLは、データセンターやHPCにおけるメモリの容量と柔軟性�
 ## 関係
 - 使う / 使われる: [[devdax]]（CXLメモリの利用形態の一つ）
 - 対比: [[Intel Optane Persistent Memory]]（DIMMスロットに装着する不揮発性メモリ）
-- 関連: [[Virtual Memory]], [[Latency]], [[Bandwidth]], [[GPU]], [[LLM]], [[KV Cache]], [[NVMe]]
+- 関連: [[Virtual Memory]], [[Latency]], [[Bandwidth]], [[GPU]], [[KV Cache]], [[NVMe]]
 
 ## 出典
 - [About CXL - Compute Express Link Consortium](https://computeexpresslink.org/about-cxl/)
