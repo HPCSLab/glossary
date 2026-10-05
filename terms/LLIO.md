@@ -1,5 +1,5 @@
 ---
-aliases: [Lightweight Layered IO Accelerator, Lightweight Layered I/O Accelerator, FEFS, Fujitsu Exabyte File System, 第1階層ストレージ, 第2階層ストレージ]
+aliases: [Lightweight Layered IO Accelerator, Lightweight Layered I/O Accelerator, 第1階層ストレージ]
 tags: [term]
 maps: ["[[Storage]]"]
 status: draft
@@ -10,7 +10,7 @@ updated: 2026-10-06
 > スーパーコンピュータ[[Fugaku|富岳]]の第1階層ストレージとして、計算ノードの近くに置いたSSDを用いて、第2階層のファイルシステムのキャッシュと、ジョブ用の一時的なファイルシステムを提供する仕組みである。正式名称は Lightweight Layered IO Accelerator である。
 
 ## 概要
-富岳のストレージは三つの階層からなる。第1階層は、計算ノードの近くに置かれたSSDによる高速な記憶であり、LLIOがこれを管理する。第2階層は、[[Lustre]]を基に富士通が拡張したファイルシステムFEFS（Fujitsu Exabyte File System）による、容量約150PBの共有の領域である。第3階層は、クラウドのストレージサービスである。
+富岳のストレージは三つの階層からなる。第1階層は、計算ノードの近くに置かれたSSDによる高速な記憶であり、LLIOがこれを管理する。第2階層は、[[Lustre]]を基に富士通が拡張したファイルシステム[[FEFS]]（Fujitsu Exabyte File System）による、容量約150PBの共有の領域である。第3階層は、クラウドのストレージサービスである。
 
 第1階層では、16台の計算ノードのうち1台が、約1.6TBのSSDを持つ計算兼ストレージI/Oノードとなっている。LLIOは、このSSDを用いて、ジョブに三種類の領域を提供する。一つ目は、第2階層のファイルシステムに対する透過的なキャッシュであり、書き込まれたデータは背後で第2階層へ書き戻される。二つ目は、各計算ノードから使う一時的なローカルの領域である。三つ目は、一つのジョブの全計算ノードで共有する一時的な領域である。
 
