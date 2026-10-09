@@ -35,6 +35,7 @@ updated: 2026-10-10
 - [[Collective Communication]] — 全プロセスが参加する通信であり、そのアルゴリズムが性能を左右する。
 - [[NCCL]] — GPUの間の集団通信を、NVLinkやInfiniBandなどの接続に合わせて行うNVIDIAのライブラリである。
 - [[UCX]] — 多様なネットワークと共有メモリ、GPUメモリを共通のAPIで扱う通信フレームワークであり、MPIの実装が用いる。
+- [[libfabric]] — ネットワークごとのプロバイダを通じて多様なネットワークを共通のAPIで扱う通信ライブラリであり、Slingshotなどの上でMPIの実装が用いる。
 
 ## RPC
 - [[Mercury]] — HPC向けのRPCフレームワークであり、大きなデータはRDMAで転送する。
