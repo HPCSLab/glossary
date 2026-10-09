@@ -3,7 +3,7 @@ aliases: [Remote Direct Memory Access, リモートダイレクトメモリア�
 tags: [term]
 maps: ["[[Parallel Computing]]", "[[Network]]"]
 status: draft
-updated: 2026-10-05
+updated: 2026-10-10
 ---
 # RDMA
 
@@ -19,11 +19,11 @@ RDMAのプログラミングインタフェースは[[Verbs|verbs]]と呼ばれ�
 RDMAを提供するネットワーク技術としては、[[InfiniBand]]、Ethernet上でRDMAを実現する[[RoCE]]（RDMA over Converged Ethernet）、TCP上でRDMAを実現するiWARPがある。
 
 ## どこで出てくるか
-HPCでは、[[MPI]]の実装がノード間の通信にRDMAを用いており、マイクロ秒程度の低いレイテンシと高い[[Bandwidth|バンド幅]]はこれによって実現されている。MPIの片側通信は、RDMA WRITE/READの考え方に直接対応する。ストレージでは、[[Lustre]]のネットワーク層LNet、[[NVMe]]-oF、並列ファイルシステムのクライアントとサーバ間の転送などに用いられる。研究の文脈では、片側通信によってサーバのCPUを介さずにデータへアクセスする分散データ構造やキーバリューストアが、盛んに設計されている。一方、メモリ登録のコスト、登録されたメモリの固定、接続ごとに必要なQPの資源などは、大規模化に伴う課題となる。
+HPCでは、[[MPI]]の実装がノード間の通信にRDMAを用いており、マイクロ秒程度の低いレイテンシと高い[[Bandwidth|バンド幅]]はこれによって実現されている。MPIの片側通信は、RDMA WRITE/READの考え方に直接対応する。ストレージでは、[[Lustre]]のネットワーク層LNet、[[NVMe-oF]]、並列ファイルシステムのクライアントとサーバ間の転送などに用いられる。研究の文脈では、片側通信によってサーバのCPUを介さずにデータへアクセスする分散データ構造やキーバリューストアが、盛んに設計されている。一方、メモリ登録のコスト、登録されたメモリの固定、接続ごとに必要なQPの資源などは、大規模化に伴う課題となる。
 
 ## 関係
 - 前提: [[System Call]], [[Latency]]
-- 使う / 使われる: [[InfiniBand]], [[RoCE]]（RDMAを提供するネットワーク）, [[Verbs]]（プログラミングインタフェース）, [[MPI]], [[Lustre]], [[NVMe]]（NVMe-oF）
+- 使う / 使われる: [[InfiniBand]], [[RoCE]]（RDMAを提供するネットワーク）, [[Verbs]]（プログラミングインタフェース）, [[MPI]], [[Lustre]], [[NVMe-oF]]
 - 関連: [[UCX]], [[Mercury]], [[Bandwidth]], [[io_uring]]
 
 ## 出典
