@@ -19,7 +19,7 @@ HPCのアプリケーションのI/Oは、[[HDF5]]や[[netCDF]]（PnetCDF）の�
 ## どこで出てくるか
 並列I/Oの[[Access Pattern|アクセスパターン]]の研究で、アプリケーションが実際に発行した呼び出しの列そのものが必要なときに使われる。例えば、Recorderの開発者らは17個のHPCのアプリケーションのトレースを解析し、POSIXの厳密な一貫性はHPCのアプリケーションにはほとんど必要とされないと報告した（[[HPDC]] 2021）。このようにトレースは、[[Parallel File System|並列ファイルシステム]]がどの程度の[[Consistency Model|一貫性モデル]]を提供すべきかを、実際のアプリケーションから確かめる材料になる。
 
-トレースは、[[Python]]のrecorder-vizに含まれる `recorder-report` でHTMLの報告書にするか、`recorder2parquet` でParquetの形式に、`recorder2timeline` でPerfettoで表示できるタイムラインの形式に変換して調べる。
+トレースは、[[Python]]のrecorder-vizに含まれる `recorder-report` でHTMLの報告書にするか、`recorder2parquet` で[[Parquet]]の形式に、`recorder2timeline` でPerfettoで表示できるタイムラインの形式に変換して調べる。
 
 ## 関係
 - 対比: [[Darshan]]（集計値を残すプロファイラであるのに対し、Recorderは個々の呼び出しを残すトレーサである）
