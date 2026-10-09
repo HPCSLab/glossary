@@ -17,7 +17,7 @@ Garnetの記憶の層はTsavoriteと呼ばれ、Microsoft Researchの以前の�
 ネットワークの層では、TLSの処理と記憶の層の操作を、ネットワークのI/Oの完了を受け取ったスレッドの上でそのまま行い、多くの場合スレッドの切り替えを避ける。複数のノードからなるクラスタの形態では、シャーディング、複製、キーの動的な移動に対応し、標準のRedisのクラスタのコマンドで管理できる。ただし、クラスタの形態は受け身であり、リーダの選出は行わず、利用者が用意する制御の仕組みからの指示に従う。
 
 ## どこで出てくるか
-Microsoftの比較では、Garnetは、Redis、KeyDB、Dragonflyと比べて、クライアントの接続の数が多い場合によく拡張し、高い処理能力と、99パーセンタイルや99.9パーセンタイルでの安定した[[Latency|レイテンシ]]を示したとしている。Microsoftの内部の複数の業務で用いられており、Azure Cosmos DB Garnet Cacheとして管理されたサービスも提供されている。設計の論文は、2026年のVLDB（PVLDB 第19巻）で発表されている。最近では、[[Vector Database|DiskANN]]のアルゴリズムによる近似最近傍探索（Vector Sets）も試験的に提供している。
+Microsoftの比較では、Garnetは、Redis、KeyDB、[[DragonflyDB|Dragonfly]]と比べて、クライアントの接続の数が多い場合によく拡張し、高い処理能力と、99パーセンタイルや99.9パーセンタイルでの安定した[[Latency|レイテンシ]]を示したとしている。Microsoftの内部の複数の業務で用いられており、Azure Cosmos DB Garnet Cacheとして管理されたサービスも提供されている。設計の論文は、2026年のVLDB（PVLDB 第19巻）で発表されている。最近では、[[Vector Database|DiskANN]]のアルゴリズムによる近似最近傍探索（Vector Sets）も試験的に提供している。
 
 ## 関係
 - 上位概念: [[Key-Value Store]]
