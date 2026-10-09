@@ -11,7 +11,7 @@ maps/    分野ごとの入口ノート（MOC）。用語を束ねて読む順�
 index.md トップページ。全 map へのリンクを置く
 ```
 
-これ以外のフォルダは作らない（例外：公開用の `.github/`）。map を追加・削除したら `index.md` も更新する。
+これ以外のフォルダは作らない（例外：公開用の `.github/` と、Claude Code のスキルを置く `.claude/`）。map を追加・削除したら `index.md` も更新する。
 
 ## 公開
 
@@ -110,6 +110,7 @@ updated: YYYY-MM-DD
 
 - map は「読む順」を意識して並べる。単なるアルファベット順にしない。
 - 1用語が複数 map に載ってよい。
+- map の節立ての整理は `/tidy-maps` スキルで行う（基準は `.claude/skills/tidy-maps/SKILL.md`）。
 
 ## 点検（ユーザーに頼まれたとき）
 
