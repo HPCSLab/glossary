@@ -1,7 +1,7 @@
 ---
 aliases: [USENIX NSDI, Symposium on Networked Systems Design and Implementation, NSDI '26, NSDI '27]
 tags: [term]
-maps: ["[[Research]]"]
+maps: ["[[Research]]", "[[Network]]"]
 status: draft
 updated: 2026-10-10
 ---
