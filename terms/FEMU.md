@@ -3,11 +3,11 @@ aliases: [femu, Flash Emulator, SSD Emulator, SSDエミュレータ]
 tags: [term]
 maps: ["[[Storage]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # FEMU
 
-> [[QEMU]]とKVMを基盤とし、SSDの内部構造と振る舞いまでを模擬する、研究用のNVMe SSDエミュレータである。
+> [[QEMU]]と[[KVM]]を基盤とし、SSDの内部構造と振る舞いまでを模擬する、研究用のNVMe SSDエミュレータである。
 
 ## 概要
 FEMUは、シカゴ大学のHuaicheng Liらが開発し、2018年のFAST（USENIX Conference on File and Storage Technologies）で発表された。論文の題名は "The CASE of FEMU: Cheap, Accurate, Scalable and Extensible Flash Emulator" であり、安価（オープンソースで無償）、正確、スケーラブル、拡張可能であることを掲げている。現在はバージニア工科大学のMoatLabが保守している。
