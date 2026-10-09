@@ -3,7 +3,7 @@ aliases: [nadino, Palladium, DPU-enabled Network Engine, DNE (DPU), CNE, NADINO 
 tags: [term]
 maps: ["[[Network]]"]
 status: draft
-updated: 2026-10-09
+updated: 2026-10-10
 ---
 # NADINO（DPU-enabled Network Engine, DNE）
 
@@ -15,7 +15,7 @@ NADINOは、Shixiong Qi、Songyu Zhang、K. K. Ramakrishnanらが、EuroSys 2026
 NADINOは、ノードの間のデータの送信を、RDMAを用いてNICに任せる。ノード内では共有メモリでデータの複製を避け、ホストのCPUとDPUの間でも共有メモリを用いて無駄なデータの移動を省く。DPUの汎用のコアは非力であるため、処理の大部分はRDMAのNICが担う。中核となるDNE（DPU-enabled network engine）は、DPUの上で動く軽量なリバースプロキシであり、利用者の関数からRDMAの資源を切り離して保護し、ノードの間のRDMAの通信の流れを調整し、競合の下でも公平になるように制御する。さらに、クラウドの入り口（ingress）で、HTTP/TCPの通信をRDMAに変換し、変換の処理を通信の経路の要所から外す。論文は、ゼロコピーのデータプレーンには、片方向（one-sided）よりも両方向（two-sided）のRDMAの操作が適するとしている。
 
 ## どこで出てくるか
-DPUを用いてホストのCPUの負担を減らす研究の一つである。予備的な結果として、DPUへの処理の移行により、毎秒の要求数が20.9倍になり、最良の場合で遅延が21分の1になり、CPUのコアを最大7個節約しながら、DPUのコアは2個しか用いなかったと報告している。実装はGitHubで公開されており、DNEを動かすワーカーのノードにはNVIDIAの[[DPU|BlueField]]が必要である（DPUを用いない場合は、ホストのCPUで動くCNEを用いる）。
+DPUを用いてホストのCPUの負担を減らす研究の一つである。予備的な結果として、DPUへの処理の移行により、毎秒の要求数が20.9倍になり、最良の場合で遅延が21分の1になり、CPUのコアを最大7個節約しながら、DPUのコアは2個しか用いなかったと報告している。実装は[[GitHub]]で公開されており、DNEを動かすワーカーのノードにはNVIDIAの[[DPU|BlueField]]が必要である（DPUを用いない場合は、ホストのCPUで動くCNEを用いる）。
 
 なお、[[Lustre]]の[[DNE]]（Distributed Namespace）とは別のものである。
 

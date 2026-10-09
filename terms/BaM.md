@@ -3,7 +3,7 @@ aliases: [Big accelerator Memory, bam::array, GPU-initiated Storage Access, GPU�
 tags: [term]
 maps: ["[[Storage]]", "[[Machine Learning Systems]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # BaM
 
@@ -19,7 +19,7 @@ BaMは、NVMeの提出キューと完了キューをGPUのメモリに置き、S
 ## どこで出てくるか
 BaMは、GPUのメモリに収まらない大きなデータを、GPUから記憶装置に細かくアクセスして扱う研究で参照される。[[GPUDirect Storage]]がCPUの決めた転送を直接の経路で行うのに対し、BaMはアクセスの発行そのものをGPUに移す点が異なる。
 
-実装はGitHubで公開されている。利用には、PCIeの[[GPUDirect RDMA|ピアツーピアのアクセス]]にメモリ全体を公開できるデータセンタ向けのGPU（Volta以降）が必要であり、IOMMUを無効にし、NVMe SSDをLinuxの標準のNVMeドライバから切り離して、BaMのカーネルモジュールで扱う必要がある。このため、SSDは通常のファイルシステムからは使えなくなる。
+実装は[[GitHub]]で公開されている。利用には、PCIeの[[GPUDirect RDMA|ピアツーピアのアクセス]]にメモリ全体を公開できるデータセンタ向けのGPU（Volta以降）が必要であり、IOMMUを無効にし、NVMe SSDをLinuxの標準のNVMeドライバから切り離して、BaMのカーネルモジュールで扱う必要がある。このため、SSDは通常のファイルシステムからは使えなくなる。
 
 ## 関係
 - 前提: [[GPU]], [[NVMe]]
