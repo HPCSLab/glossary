@@ -3,7 +3,7 @@ aliases: [tikz, PGF, PGF/TikZ, pgfplots, TikZ ist kein Zeichenprogramm]
 tags: [term]
 maps: ["[[Research]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # TikZ
 
@@ -15,7 +15,7 @@ TikZとPGFは、Till Tantauが設計した、図を記述するための二層�
 TikZでは、点の座標、線、図形、文字の位置を命令として書き、図をソースコードとして記述する。有限オートマトン、回路、木、グラフの自動配置など、多くの種類の図のためのライブラリが用意されている。
 
 ## どこで出てくるか
-TikZの図は、TeXの文書の中で、本文と同じ仕組みで組版される。図はテキストとして記述されるため、gitで変更を管理できる。グラフについては、[[Matplotlib|matplotlib]]などのソフトウェアがTikZの形式で図を出力する機能を備えており、[[Beamer|beamer]]もPGFを利用している。
+TikZの図は、TeXの文書の中で、本文と同じ仕組みで組版される。図はテキストとして記述されるため、[[Git|git]]で変更を管理できる。グラフについては、[[Matplotlib|matplotlib]]などのソフトウェアがTikZの形式で図を出力する機能を備えており、[[Beamer|beamer]]もPGFを利用している。
 
 ## 関係
 - 上位概念: [[LaTeX]]
