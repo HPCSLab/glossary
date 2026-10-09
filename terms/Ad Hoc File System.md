@@ -1,5 +1,5 @@
 ---
-aliases: [アドホックファイルシステム, Ad-hoc File System, Ad Hoc Parallel File System, Burst Buffer, バーストバッファ, BeeOND, BeeGFS On Demand, BurstFS]
+aliases: [アドホックファイルシステム, Ad-hoc File System, Ad Hoc Parallel File System, BeeOND, BeeGFS On Demand, BurstFS]
 tags: [term]
 maps: ["[[HPC Storage]]"]
 status: draft
@@ -19,7 +19,7 @@ updated: 2026-10-10
 ## どこで出てくるか
 アドホックファイルシステムは、HPCストレージの研究の主要な題材の一つである。2017年のDagstuhlセミナーでの議論をもとにまとめられた総説（Brinkmannら、2020年）は、BeeOND、GekkoFS、BurstFSを例として、アドホックファイルシステムが提供するインタフェースと意味論を比較し、バッチジョブのスケジューラとの統合や、常設のファイルシステムとの間のデータのステージングの調整を、今後の研究課題として挙げている。例えば、[[CHFS]]の論文は、BeeONDやGekkoFSとの比較によって性能を評価している。
 
-関連する概念として、バーストバッファがある。バーストバッファは、アプリケーションと外部の記憶装置の間に高速な記憶の層を置いて、チェックポイントなどの短時間に集中する書き込みを一時的に受け止めるという考え方である。2012年の研究（Liuら）は、バーストバッファによって、アプリケーションから見た外部の記憶装置への[[Bandwidth|スループット]]を高められ、目標のスループットを満たすために必要な外部の記憶装置の帯域を減らせることを示した。GekkoFSやUnifyFSは、自らをバーストバッファのためのファイルシステムと位置付けている。
+関連する概念として、[[Burst Buffer|バーストバッファ]]がある。バーストバッファは、アプリケーションと並列ファイルシステムの間に高速な記憶の層を置いて、短時間に集中するI/Oを受け止める仕組みであり、ノードローカルな記憶装置で構成する場合に、アドホックファイルシステムがその層のファイルシステムとして用いられる。GekkoFSやUnifyFSは、自らをバーストバッファのためのファイルシステムと位置付けている。
 
 ## 関係
 - 上位概念: [[File System]]
@@ -30,7 +30,6 @@ updated: 2026-10-10
 ## 出典
 - [Ad Hoc File Systems for High-Performance Computing (Brinkmann et al., Journal of Computer Science and Technology, 2020)](https://jcst.ict.ac.cn/EN/10.1007/s11390-020-9801-1)
 - [BeeOND: BeeGFS On Demand - BeeGFS Documentation](https://doc.beegfs.io/latest/advanced_topics/beeond.html)
-- [On the Role of Burst Buffers in Leadership-class Storage Systems (Liu et al., MSST 2012)](https://doi.org/10.1109/MSST.2012.6232369)
 - [GekkoFS documentation](https://storage.bsc.es/projects/gekkofs/documentation/users/building.html)
 - [UnifyFS - GitHub](https://github.com/LLNL/UnifyFS)
 - [CHFS: Parallel Consistent Hashing File System for Node-local Persistent Memory - 筑波大学 HPCS研究室](https://www.hpcs.cs.tsukuba.ac.jp/publications/2022/hpcasia2022tatebe/)

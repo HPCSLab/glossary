@@ -7,7 +7,7 @@ updated: 2026-10-10
 ---
 # DDN IME（Infinite Memory Engine）
 
-> [[Compute Node|計算ノード]]と[[Parallel File System|並列ファイルシステム]]の間に[[SSD]]を束ねた層を置き、書き込みを受け止めて整列してから下位のファイルシステムへ書き戻す、[[EXAScaler|DDN]]の[[Ad Hoc File System|バーストバッファ]]製品である。
+> [[Compute Node|計算ノード]]と[[Parallel File System|並列ファイルシステム]]の間に[[SSD]]を束ねた層を置き、書き込みを受け止めて整列してから下位のファイルシステムへ書き戻す、[[EXAScaler|DDN]]の[[Burst Buffer|バーストバッファ]]製品である。
 
 ## 概要
 HPCのアプリケーションのI/Oには、チェックポイントのように短時間に集中する書き込みや、多数の[[Process|プロセス]]による一つの共有ファイルへの小さく整列していない書き込みが多い。[[Lustre]]や[[IBM Storage Scale|GPFS]]のような並列ファイルシステムは、このような[[Access Pattern|アクセスパターン]]では、[[Distributed Lock Manager|ロック]]の競合などによって性能が大きく下がる。IMEは、このI/Oを並列ファイルシステムに直接届けず、SSDを搭載した専用のIMEサーバの層で受け止める。
@@ -20,7 +20,7 @@ DDNの資料によると、計算ノードのIMEクライアントは、デー�
 IMEは、バーストバッファの研究や、並列ファイルシステムの前段にSSDの層を置く構成の論文で、商用の代表例として参照される。IMEが対象とするのは共有ファイルへの整列しない書き込みのようなデータのI/Oであり、メタデータの操作は下位のファイルシステムに渡されるため、メタデータの性能を高める仕組みではない。この区別は、[[IOR]]と[[mdtest]]で性能を評価する際にも現れる。
 
 ## 関係
-- 上位概念: [[Ad Hoc File System]]（バーストバッファ）
+- 上位概念: [[Burst Buffer]]
 - 前提: [[Parallel File System]], [[SSD]]
 - 対比: [[Lustre PCC]]（クライアントのローカルな記憶装置をキャッシュとし、専用のサーバを持たない）
 - 使う / 使われる: [[Lustre]], [[IBM Storage Scale]], [[MPI-IO]]
