@@ -3,11 +3,11 @@ aliases: [NVMe over Fabrics, NVMeoF, NVMe/TCP, NVMe/RDMA, NVMe/FC, nvme connect,
 tags: [term]
 maps: ["[[Storage]]", "[[Network]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # NVMe-oF（NVMe over Fabrics）
 
-> [[NVMe]]のコマンド体系を、PCI Expressの代わりにネットワークを介して用いることで、リモートの記憶装置をローカルのNVMe装置に近い性能で利用するための規格である。
+> [[NVMe]]のコマンド体系を、[[PCIe|PCI Express]]の代わりにネットワークを介して用いることで、リモートの記憶装置をローカルのNVMe装置に近い性能で利用するための規格である。
 
 ## 概要
 NVMeは、もとはPCI Expressで計算機に直接接続されたSSDのためのインタフェースであり、投入キューと完了キューの対を介してコマンドをやり取りする。NVMe-oFは、このキューの対とコマンドの体系をそのまま保ちつつ、転送路をネットワークに置き換える。現在のNVMeの仕様は、共通の基本仕様に、コマンド体系ごとの仕様と転送路ごとの仕様を組み合わせる構成をとっており、転送路としてPCI Expressのほかに、[[RDMA]]（[[InfiniBand]]や[[RoCE]]）、TCP、Fibre Channelが定められている。

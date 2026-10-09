@@ -3,11 +3,11 @@ aliases: [GPU Direct RDMA, GPUDirect, GDR, GPUDirect RDMA (GDR), nvidia-peermem,
 tags: [term]
 maps: ["[[Network]]", "[[Parallel Computing]]", "[[Machine Learning Systems]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # GPUDirect RDMA
 
-> NICなどのPCIeの装置が、ホストのメモリを経由せずに、[[GPU]]のメモリを直接読み書きできるようにするNVIDIAの技術である。
+> NICなどの[[PCIe]]の装置が、ホストのメモリを経由せずに、[[GPU]]のメモリを直接読み書きできるようにするNVIDIAの技術である。
 
 ## 概要
 GPUDirect RDMAは、Keplerの世代のGPUとCUDA 5.0で導入された。GPUのメモリは、PCIeのBAR（Base Address Register）と呼ばれるアドレスの窓を通じて、PCIeのアドレス空間に見せることができる。GPUDirect RDMAは、この仕組みを用いて、同じPCIeの階層にあるネットワークのアダプタやストレージのアダプタなどの他の装置が、GPUのメモリに直接DMAで読み書きすることを可能にする。

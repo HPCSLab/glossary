@@ -3,11 +3,11 @@ aliases: [Compute Express Link, CXL.mem, CXL.cache, CXL.io, CXL Memory, CXLメ�
 tags: [term]
 maps: ["[[Operating System]]", "[[Storage]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # CXL（Compute Express Link）
 
-> PCI Expressの物理層の上に、キャッシュの一貫性を保ったメモリアクセスの仕組みを加えた、CPUとメモリ、アクセラレータを接続するための開かれた業界標準のインターコネクトである。
+> [[PCIe|PCI Express]]の物理層の上に、キャッシュの一貫性を保ったメモリアクセスの仕組みを加えた、CPUとメモリ、アクセラレータを接続するための開かれた業界標準のインターコネクトである。
 
 ## 概要
 CXLは主にIntelが開発し、2019年に業界団体のCXL Consortiumが発足した。その後、競合していたGen-ZとOpenCAPIの規格も、CXL Consortiumに移管された。規格の主な版は、PCIe 5.0を基盤とする1.0/1.1（2019年）、スイッチを介した接続と装置の共有（プーリング）を加えた2.0（2020年）、PCIe 6.0を基盤とし、多段のスイッチとメモリの共有を拡充した3.0（2022年）、階層メモリのための機能を加えた3.2（2024年）、転送速度をさらに倍にした4.0（2025年）である。
