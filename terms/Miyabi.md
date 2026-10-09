@@ -3,7 +3,7 @@ aliases: [みやび, Miyabi-G, Miyabi-C, OFP-II, JCAHPC, 最先端共同HPC基�
 tags: [term]
 maps: ["[[Parallel Computing]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # Miyabi
 
@@ -12,7 +12,7 @@ updated: 2026-10-06
 ## 概要
 JCAHPC（Joint Center for Advanced High Performance Computing）は、筑波大学計算科学研究センターと東京大学情報基盤センターが共同で運営する施設である。Miyabiは、その新しいスーパーコンピュータとして、OFP-IIの名で導入が決定され、東京大学柏キャンパスに設置されて、2025年1月14日に正式な運用を開始した。2025年4月から、文部科学省のHPCIの制度や、両大学の共同利用・共同研究の制度を通じて利用されている。名前には、理論性能が優れているだけでなく、その能力を難なく発揮できるように、という思いが込められている。
 
-Miyabiは、二種類の[[Compute Node|計算ノード]]からなる。Miyabi-Gは、NVIDIAのGH200 Grace Hopper Superchipを搭載した1,120ノードであり、GH200は、CPU（Grace）と[[GPU]]（Hopper）を、高速なCPU-GPU間の専用リンクNVLink-C2Cで接続したものである。Miyabi-Cは、IntelのXeon Max 9480を2基搭載した190ノードである。両者は[[InfiniBand]] NDR200で接続され、システム全体の倍精度の演算性能は80.1PFLOPSである。また、すべてのドライブに[[NVMe]] SSDを用いた、10.3PBの[[Parallel File System|並列ファイルシステム]]を備える。2024年11月の[[TOP500]]では、国内の学術目的のスーパーコンピュータとして[[Fugaku|富岳]]に次ぐ第2位の性能を記録した。
+Miyabiは、二種類の[[Compute Node|計算ノード]]からなる。Miyabi-Gは、NVIDIAのGH200 Grace Hopper Superchipを搭載した1,120ノードであり、GH200は、CPU（Grace）と[[GPU]]（Hopper）を、高速なCPU-GPU間の専用リンク[[NVLink|NVLink-C2C]]で接続したものである。Miyabi-Cは、IntelのXeon Max 9480を2基搭載した190ノードである。両者は[[InfiniBand]] NDR200で接続され、システム全体の倍精度の演算性能は80.1PFLOPSである。また、すべてのドライブに[[NVMe]] SSDを用いた、10.3PBの[[Parallel File System|並列ファイルシステム]]を備える。2024年11月の[[TOP500]]では、国内の学術目的のスーパーコンピュータとして[[Fugaku|富岳]]に次ぐ第2位の性能を記録した。
 
 共有のファイルシステムは、全ての記憶装置を[[NVMe]] SSDとした11.3PB（1.0TB/s）の[[Lustre]]（[[EXAScaler|DDN EXAScaler]]）である。OSはRocky Linux 9（ログインノードはRed Hat Enterprise Linux 9）、ジョブスケジューラは[[PBS|PBS Professional]]である。
 
