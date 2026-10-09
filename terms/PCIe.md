@@ -1,7 +1,7 @@
 ---
 aliases: [PCI Express, PCI-E, PCIe Gen]
 tags: [term]
-maps: ["[[Parallel Computing]]", "[[Storage]]"]
+maps: ["[[Parallel Computing]]", "[[Storage]]", "[[Operating System]]"]
 status: draft
 updated: 2026-10-10
 ---
