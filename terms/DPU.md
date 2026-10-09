@@ -21,7 +21,7 @@ DPUのCPUのコアはホストのCPUより非力であるため、DPUを用い�
 
 ## 関係
 - 使う / 使われる: [[RDMA]], [[NVMe-oF]], [[NVMe]], [[InfiniBand]]
-- 関連: [[Block Storage]]
+- 関連: [[Block Storage]], [[NADINO]]
 
 ## 出典
 - [Data processing unit - Wikipedia](https://en.wikipedia.org/wiki/Data_processing_unit)
