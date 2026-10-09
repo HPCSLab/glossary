@@ -19,7 +19,7 @@ Gfarmには、Gfarmのコマンドと独自のAPIで使う方法のほか、[[FU
 ## どこで出てくるか
 [[HPCI]]共用ストレージは、Gfarmを用いて、全国のHPCIの計算資源から一つのファイルシステムとしてデータを共有できるようにしている。東京大学（柏）と[[RIKEN|理化学研究所]]計算科学研究センター（神戸）の二つの拠点からなり、拠点の間でデータを複製して信頼性を高めている。容量は論理45PB（物理90PB）である。
 
-計算ノードのローカルな記憶装置をジョブの間だけ束ねる[[Ad Hoc File System|アドホックファイルシステム]]として、Gfarmを[[Burst Buffer|バーストバッファ]]に用いるGfarm/BBも提案されている（Journal of Computer Science and Technology、2020年）。同じく建部らが開発する[[CHFS]]は、ノードのローカルな[[Intel Optane Persistent Memory|永続メモリ]]や[[NVMe]] SSDを用いる並列キャッシュファイルシステムである。
+計算ノードのローカルな記憶装置をジョブの間だけ束ねる[[Ad Hoc File System|アドホックファイルシステム]]として、Gfarmを[[Burst Buffer|バーストバッファ]]に用いるGfarm/BBも提案されている（Journal of Computer Science and Technology、2020年）。同じく建部らが開発する[[CHFS]]は、ノードのローカルな[[Intel Optane Persistent Memory|永続メモリ]]や[[NVMe]] [[SSD]]を用いる並列キャッシュファイルシステムである。
 
 ## 関係
 - 上位概念: [[Distributed File System]]
