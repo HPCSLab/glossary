@@ -1,9 +1,9 @@
 ---
 aliases: [verbs, ibverbs, libibverbs, IB Verbs, RDMA Verbs, Queue Pair, QP, キューペア, Completion Queue, CQ, Protection Domain, PD, Memory Region, MR, rdma-core]
 tags: [term]
-maps: ["[[Parallel Computing]]", "[[Network]]"]
+maps: ["[[Network]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # Verbs
 

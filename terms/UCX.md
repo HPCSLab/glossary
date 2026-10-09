@@ -1,9 +1,9 @@
 ---
 aliases: [Unified Communication X, OpenUCX, UCP, UCT, UCS, UCX_TLS]
 tags: [term]
-maps: ["[[Parallel Computing]]", "[[Network]]"]
+maps: ["[[Network]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # UCX
 

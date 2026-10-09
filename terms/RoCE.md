@@ -1,9 +1,9 @@
 ---
 aliases: [RDMA over Converged Ethernet, RoCEv2, RoCE v2, RoCEv1, PFC, Priority Flow Control, Lossless Ethernet, ロスレスEthernet]
 tags: [term]
-maps: ["[[Parallel Computing]]", "[[Network]]"]
+maps: ["[[Network]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # RoCE
 
