@@ -1,9 +1,9 @@
 ---
 aliases: [Distributed Namespace, Distributed Namespace Environment, Lustre DNE, Remote Directory, リモートディレクトリ, Striped Directory, ストライプディレクトリ, "lfs mkdir -i", "lfs mkdir -c", MDT, MDT0000]
 tags: [term]
-maps: ["[[Storage]]"]
+maps: ["[[HPC Storage]]"]
 status: draft
-updated: 2026-10-09
+updated: 2026-10-10
 ---
 # DNE（Distributed Namespace）
 
@@ -17,7 +17,7 @@ DNEには二つの形がある。一つはリモートディレクトリであ�
 ## どこで出てくるか
 一つのディレクトリに大量のファイルを作成するアプリケーションでは、一つのMDTの処理能力がボトルネックとなる。ストライプディレクトリは、このような用途のために用意されており、一つのディレクトリに置けるエントリの数の上限も、ストライプの数の倍に増える。ただし、通常のディレクトリより処理の負担が増えるため、全てのディレクトリをストライプにすべきではないとされている。
 
-DPUの文脈で「DNE」と呼ばれるものに、サーバレスのクラウドのための[[NADINO]]のDPU-enabled Network Engineがあるが、これとは別のものである。
+[[DPU]]の文脈で「DNE」と呼ばれるものに、サーバレスのクラウドのための[[NADINO]]のDPU-enabled Network Engineがあるが、これとは別のものである。
 
 ## 関係
 - 上位概念: [[Lustre]]

@@ -3,11 +3,11 @@ aliases: [High Bandwidth Memory, 高バンド幅メモリ, 広帯域メモリ, H
 tags: [term]
 maps: ["[[Parallel Computing]]", "[[Machine Learning Systems]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # HBM（High Bandwidth Memory）
 
-> 複数のDRAMのチップを垂直に積み重ね、非常に幅の広いインタフェースでプロセッサと接続することで、高い[[Bandwidth|バンド幅]]を得るメモリの規格である。
+> 複数の[[DRAM]]のチップを垂直に積み重ね、非常に幅の広いインタフェースでプロセッサと接続することで、高い[[Bandwidth|バンド幅]]を得るメモリの規格である。
 
 ## 概要
 HBMは、2008年頃からAMDで開発が始まり、2013年10月にJEDECによって標準規格として採択された。同年にSK hynixが最初のHBMのチップを製造し、2015年にAMDのFijiが、HBMを用いた最初のGPUとなった。

@@ -3,7 +3,7 @@ aliases: [paxos, パクソス, Multi-Paxos, Basic Paxos, Proposer, Acceptor, Lea
 tags: [term]
 maps: ["[[Distributed Systems]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # Paxos
 
@@ -17,7 +17,7 @@ Paxosの参加者は、値を提案する提案者（proposer）、提案を受�
 Paxosは、どのような故障やメッセージの遅れの下でも誤った値が決まらないこと（安全性）を保証するが、非同期のネットワークでは必ず合意に至ること（活性）は保証できない。これは[[Consensus|合意]]の一般的な限界（FLPの不可能性）による。一つの値ではなく、値の列に繰り返し合意するように拡張したものをMulti-Paxosと呼ぶ。
 
 ## どこで出てくるか
-Paxosは、[[State Machine Replication|状態機械複製]]を実現する合意アルゴリズムとして、GoogleのChubby（分散ロックサービス）やSpanner（データベース）などで用いられている。理解と実装が難しいことでも知られ、これを改善するために[[Raft]]が提案された。Lamport自身による、[[TLA+]]で記述したPaxosの仕様も公開されている。
+Paxosは、[[State Machine Replication|状態機械複製]]を実現する合意アルゴリズムとして、GoogleのChubby（[[Distributed Lock Manager|分散ロック]]サービス）やSpanner（データベース）などで用いられている。理解と実装が難しいことでも知られ、これを改善するために[[Raft]]が提案された。Lamport自身による、[[TLA+]]で記述したPaxosの仕様も公開されている。
 
 ## 関係
 - 上位概念: [[Consensus]]

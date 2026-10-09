@@ -1,13 +1,13 @@
 ---
 aliases: [unifyfs, UnifyFS burst buffer file system]
 tags: [term]
-maps: ["[[Storage]]"]
+maps: ["[[HPC Storage]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # UnifyFS
 
-> スーパーコンピュータの計算ノードのローカルな記憶装置に対して、ジョブの実行中だけ存在する共有の名前空間を提供する、ユーザレベルの一時的なファイルシステムである。
+> スーパーコンピュータの[[Compute Node|計算ノード]]のローカルな記憶装置に対して、ジョブの実行中だけ存在する共有の名前空間を提供する、ユーザレベルの一時的なファイルシステムである。
 
 ## 概要
 UnifyFSは、米国のローレンス・リバモア国立研究所（LLNL）とオークリッジ国立研究所（ORNL）が開発しており、2023年のIPDPSで論文 "UnifyFS: A User-level Shared File System for Unified Access to Distributed Local Storage" として発表された。この論文は、IPDPSで初めて設けられた、オープンソースへの貢献に対する最優秀賞を受けた。

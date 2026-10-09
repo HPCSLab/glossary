@@ -1,6 +1,6 @@
 ---
 tags: [map]
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # Scientific Data（科学データ）
 
@@ -14,10 +14,10 @@ updated: 2026-10-06
 - [[netCDF]] — 次元、変数、属性からなる配列データの形式であり、地球科学の事実上の標準である。
 - [[Zarr]] — チャンクを独立したオブジェクトとして格納する、クラウド向けの配列形式である。
 
-## 下位の仕組み
-- [[MPI-IO]] — Parallel HDF5やPnetCDFが用いる並列I/Oのインタフェースである。
-- [[Parallel File System]] — HPCにおける主要な格納先である（[[Storage]]を参照）。
-- [[Object Storage]] — クラウドにおける主要な格納先である。
-
 ## 扱う道具
 - [[NumPy]] — データを読み込んだ先の多次元配列である（[[Programming]]を参照）。
+
+## 関連する分野
+- [[HPC Storage]] — Parallel HDF5やPnetCDFが用いるMPI-IOと、HPCにおける主要な格納先である[[Parallel File System|並列ファイルシステム]]を扱う。
+- [[Storage]] — クラウドにおける主要な格納先であるオブジェクトストレージを扱う。
+- [[Programming]] — Pythonと、データを扱うライブラリを扱う。

@@ -3,7 +3,7 @@ aliases: [Latex, latex, LaTeX2e, TeX, pdfLaTeX, LuaLaTeX, XeLaTeX, LuaTeX-ja, Bi
 tags: [term]
 maps: ["[[Research]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # LaTeX
 
@@ -17,7 +17,7 @@ LaTeXは、1980年代初めにLeslie Lamportが、Donald Knuthの組版システ
 LaTeXの文書を処理するエンジンには複数の種類がある。pdfTeXはPDFを直接出力し、XeTeXとLuaTeXはUnicodeとOS上のフォントを扱える。日本語の文書には、LuaTeX上で日本語の組版を行うパッケージであるLuaTeX-jaなどを用いる。参考文献はBibTeXなどで管理する。LaTeXとその関連ソフトウェアは、TeX LiveやMiKTeXといった配布形態でまとめて導入でき、Overleafのように、ブラウザ上で共同編集できるサービスもある。
 
 ## どこで出てくるか
-LaTeXは、複雑な数式や多言語を含む科学技術の文書の作成において、学術界の標準となっている。発表のスライドは[[Beamer|beamer]]で、図は[[TikZ]]や[[Matplotlib|matplotlib]]で作成でき、いずれもLaTeXの文書と同じフォントや数式の表記で揃えられる。原稿はテキストファイルであるため、gitで版を管理できる。
+LaTeXは、複雑な数式や多言語を含む科学技術の文書の作成において、学術界の標準となっている。発表のスライドは[[Beamer|beamer]]で、図は[[TikZ]]や[[Matplotlib|matplotlib]]で作成でき、いずれもLaTeXの文書と同じフォントや数式の表記で揃えられる。原稿はテキストファイルであるため、[[Git|git]]で版を管理できる。
 
 ## 関係
 - 使う / 使われる: [[Beamer]]（スライドを作るクラス）, [[TikZ]]（図を描くパッケージ）

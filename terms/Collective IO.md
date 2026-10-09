@@ -1,9 +1,9 @@
 ---
 aliases: [Collective I/O, 集団I/O, 集団的I/O, Two-phase I/O, 二段階I/O, Collective Buffering, Aggregator, アグリゲータ, 集約役, Data Sieving, データシービング, cb_nodes, cb_buffer_size, romio_cb_write, MPI_File_write_all]
 tags: [term]
-maps: ["[[Parallel Computing]]", "[[Storage]]"]
+maps: ["[[Parallel Computing]]", "[[HPC Storage]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # Collective I/O（集団I/O）
 
@@ -19,7 +19,7 @@ MPI-IOの代表的な実装であるROMIO（[[MPICH]]や[[Open MPI]]に含まれ
 ## どこで出てくるか
 二段階I/Oの振る舞いは、`MPI_Info` で渡すヒントで調整できる。ROMIOでは、集約役の最大の数を `cb_nodes`（既定はファイルを開いたプロセスのノードの数）、集約役の作業用のバッファの大きさを `cb_buffer_size`（既定は4MB）で指定し、集団書き込みで二段階I/Oを用いるかを `romio_cb_write`（`enable`、`disable`、`automatic`）で切り替える。使われているヒントの値は `MPI_File_get_info` で確かめられる。
 
-[[Parallel File System|並列ファイルシステム]]の上で全プロセスが一つの共有ファイルに書くN-1の[[Access Pattern|アクセスパターン]]では、集団I/Oが性能を左右する。[[HDF5]]やPnetCDFなどの高水準のI/Oライブラリも、並列I/Oの下でMPI-IOを用いており、その集団I/Oの設定の影響を受ける。
+[[Parallel File System|並列ファイルシステム]]の上で全プロセスが一つの共有ファイルに書くN-1の[[Access Pattern|アクセスパターン]]では、集団I/Oが性能を左右する。[[HDF5]]や[[netCDF|PnetCDF]]などの高水準のI/Oライブラリも、並列I/Oの下でMPI-IOを用いており、その集団I/Oの設定の影響を受ける。
 
 ## 関係
 - 上位概念: [[MPI-IO]]

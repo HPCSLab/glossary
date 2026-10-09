@@ -1,9 +1,9 @@
 ---
 aliases: [gfarm, Gfarm file system, Gfarmファイルシステム, Grid Datafarm, gfmd, gfsd, gfarm2fs, GfarmFS-FUSE, Gfarm/BB, HPCI共用ストレージ, HPCI Shared Storage]
 tags: [term]
-maps: ["[[Storage]]"]
+maps: ["[[HPC Storage]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # Gfarm
 
@@ -17,9 +17,9 @@ Gfarmは、三種類のノードからなる。利用者が使うクライアン
 Gfarmには、Gfarmのコマンドと独自のAPIで使う方法のほか、[[FUSE]]を用いたgfarm2fsでLinuxのクライアントにマウントし、アプリケーションから透過的に使う方法がある。
 
 ## どこで出てくるか
-[[HPCI]]共用ストレージは、Gfarmを用いて、全国のHPCIの計算資源から一つのファイルシステムとしてデータを共有できるようにしている。東京大学（柏）と理化学研究所計算科学研究センター（神戸）の二つの拠点からなり、拠点の間でデータを複製して信頼性を高めている。容量は論理45PB（物理90PB）である。
+[[HPCI]]共用ストレージは、Gfarmを用いて、全国のHPCIの計算資源から一つのファイルシステムとしてデータを共有できるようにしている。東京大学（柏）と[[RIKEN|理化学研究所]]計算科学研究センター（神戸）の二つの拠点からなり、拠点の間でデータを複製して信頼性を高めている。容量は論理45PB（物理90PB）である。
 
-計算ノードのローカルな記憶装置をジョブの間だけ束ねる[[Ad Hoc File System|アドホックファイルシステム]]として、Gfarmをバーストバッファに用いるGfarm/BBも提案されている（Journal of Computer Science and Technology、2020年）。同じく建部らが開発する[[CHFS]]は、ノードのローカルな永続メモリやNVMe SSDを用いる並列キャッシュファイルシステムである。
+計算ノードのローカルな記憶装置をジョブの間だけ束ねる[[Ad Hoc File System|アドホックファイルシステム]]として、Gfarmをバーストバッファに用いるGfarm/BBも提案されている（Journal of Computer Science and Technology、2020年）。同じく建部らが開発する[[CHFS]]は、ノードのローカルな[[Intel Optane Persistent Memory|永続メモリ]]や[[NVMe]] SSDを用いる並列キャッシュファイルシステムである。
 
 ## 関係
 - 上位概念: [[Distributed File System]]

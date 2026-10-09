@@ -1,9 +1,9 @@
 ---
 aliases: [RDMA over Converged Ethernet, RoCEv2, RoCE v2, RoCEv1, PFC, Priority Flow Control, Lossless Ethernet, ロスレスEthernet]
 tags: [term]
-maps: ["[[Parallel Computing]]", "[[Network]]"]
+maps: ["[[Network]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # RoCE
 
@@ -17,7 +17,7 @@ RoCEは、[[InfiniBand]]のRDMAの仕組みを、データセンターで広く�
 InfiniBandは、受信側の空きを確認してから送るフロー制御によって、混雑時にもパケットを失わない。一方、通常のEthernetは混雑時にパケットを破棄し、その回復を上位のTCPに任せる。RDMAのプロトコルはパケットの喪失に弱いため、RoCEで十分な性能を得るには、混雑時に送信を一時停止させるPFC（Priority Flow Control）などによって、パケットを失わない（ロスレスな）Ethernetを構成するのが一般的である。RoCE v2は、ECNによる輻輳の通知に基づく輻輳制御の仕組みも備える。
 
 ## どこで出てくるか
-RoCEは、InfiniBandの専用のネットワークを持たないデータセンターやクラウド、また機械学習用の大規模な[[GPU]]クラスタで、RDMAを用いるために広く採用されている。HPCクラスタでも、Ethernetの設備を活かしつつ低遅延の通信を得る手段として用いられる。運用上は、PFCの設定の不備によって性能が大きく低下したり、PFCによる一時停止が連鎖してネットワーク全体が停滞したりする問題が知られており、ネットワークの設定と監視が性能を左右する。性能を評価する際には、InfiniBandとRoCEのどちらで、どの速度のリンクを用いているかを明記する必要がある。
+RoCEは、InfiniBandの専用のネットワークを持たないデータセンターやクラウド、また機械学習用の大規模な[[GPU]]クラスタで、RDMAを用いるために広く採用されている。HPCクラスタでも、Ethernetの設備を活かしつつ低[[Latency|遅延]]の通信を得る手段として用いられる。運用上は、PFCの設定の不備によって性能が大きく低下したり、PFCによる一時停止が連鎖してネットワーク全体が停滞したりする問題が知られており、ネットワークの設定と監視が性能を左右する。性能を評価する際には、InfiniBandとRoCEのどちらで、どの速度のリンクを用いているかを明記する必要がある。
 
 ## 関係
 - 上位概念: [[RDMA]]
