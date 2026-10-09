@@ -1,7 +1,7 @@
 ---
 aliases: [Data Processing Unit, データ処理ユニット, SmartNIC, スマートNIC, IPU, Infrastructure Processing Unit, BlueField, NVIDIA BlueField, DOCA, SNAP, NVMe SNAP]
 tags: [term]
-maps: ["[[Network]]", "[[Storage]]"]
+maps: ["[[Network]]"]
 status: draft
 updated: 2026-10-10
 ---
