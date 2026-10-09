@@ -14,6 +14,7 @@ updated: 2026-10-10
 - [[Parallel File System]] — 複数のサーバにデータを分散し並列にI/Oを行うファイルシステムである。
 - [[Consistency Model]] — 共有データの書き込みがいつ誰に見えるかの規則であり、POSIX・NFS・MPI-IO・S3で異なる。
 - [[Distributed Lock Manager]] — 複数のクライアントのキャッシュの一貫性を、ロックで保つ仕組みである。LustreではLDLMと呼ぶ。
+- [[Erasure Coding]] — 複製より少ない容量で多数のサーバにまたがる冗長化を行う手法であり、再構築と小さな書き換えの費用が大きい。
 
 ## 共有ファイルシステムと分散ストレージの実装
 ### Lustreとその派生

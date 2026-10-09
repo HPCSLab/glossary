@@ -3,7 +3,7 @@ aliases: [Redundant Array of Independent Disks, Redundant Array of Inexpensive D
 tags: [term]
 maps: ["[[Storage]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # RAID
 
@@ -19,7 +19,7 @@ RAIDは、1987年にカリフォルニア大学バークレー校のPatterson、
 ## どこで出てくるか
 Linuxでは、カーネルのmdドライバによるソフトウェアRAIDを `mdadm` で構成するのが一般的であり、状態は `/proc/mdstat` で確認できる。mdは、write holeへの対策として、ジャーナル用のデバイスや、RAID5向けの部分パリティログ（PPL）も提供する。このほか、[[LVM]]のRAID種別のLV、専用のコントローラによるハードウェアRAID、RAIDの機能を統合したファイルシステムである[[ZFS]]（RAID-Z）や[[btrfs]]がある。ZFSのRAID-Zは、コピーオンライトと可変幅のストライプによってwrite holeを回避している。
 
-大規模なストレージでは、RAIDの考え方は、任意の数の故障に耐えるよう一般化した消失訂正符号（erasure coding）として、多数のサーバにまたがって用いられる。[[Ceph]]や[[Parallel File System|並列ファイルシステム]]のストレージサーバの内部構成、オブジェクトストレージの冗長化などで、複製と消失訂正符号のどちらを選ぶかは、容量効率、再構築の負荷、[[Latency|レイテンシ]]のトレードオフとして設計上の論点となる。
+大規模なストレージでは、RAIDの考え方は、任意の数の故障に耐えるよう一般化した[[Erasure Coding|消失訂正符号]]（erasure coding）として、多数のサーバにまたがって用いられる。[[Ceph]]や[[Parallel File System|並列ファイルシステム]]のストレージサーバの内部構成、オブジェクトストレージの冗長化などで、複製と消失訂正符号のどちらを選ぶかは、容量効率、再構築の負荷、[[Latency|レイテンシ]]のトレードオフとして設計上の論点となる。
 
 ## 関係
 - 上位概念: [[Block Storage]]
