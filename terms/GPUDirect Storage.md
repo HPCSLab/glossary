@@ -3,11 +3,11 @@ aliases: [GPU Direct Storage, GDS, cuFile, cuFileRead, cuFileWrite, nvidia-fs, B
 tags: [term]
 maps: ["[[Storage]]", "[[Machine Learning Systems]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # GPUDirect Storage（GDS）
 
-> 記憶装置と[[GPU]]のメモリの間で、CPUのメモリの中継（バウンスバッファ）を経ずに直接DMAでデータを転送する、NVIDIAの技術である。
+> 記憶装置と[[GPU]]のメモリの間で、CPUのメモリの中継（バウンスバッファ）を経ずに直接[[DMA]]でデータを転送する、NVIDIAの技術である。
 
 ## 概要
 通常、ファイルのデータをGPUで処理するには、まず記憶装置からCPUのメモリにデータを読み込み、それをGPUのメモリに複製する。このCPUのメモリの中間の領域をバウンスバッファと呼ぶ。GPUDirect Storageは、記憶装置とGPUのメモリの間に直接のデータの経路を作り、この中継を省く。これにより、システムの[[Bandwidth|バンド幅]]のボトルネックが緩和され、[[Latency|レイテンシ]]とCPUの負荷が減る。
