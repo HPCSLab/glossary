@@ -3,14 +3,14 @@ aliases: [vllm, PagedAttention, Continuous Batching, 連続バッチ処理, LLM 
 tags: [term]
 maps: ["[[Machine Learning Systems]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # vLLM
 
 > [[LLM]]の推論とサービングのためのオープンソースのライブラリであり、PagedAttentionによる[[KV Cache|KVキャッシュ]]の効率的な管理を特徴とする。
 
 ## 概要
-vLLMは、カリフォルニア大学バークレー校のSky Computing Labで開発され、2023年のSOSPで論文 "Efficient Memory Management for Large Language Model Serving with PagedAttention"（Kwonら）として発表された。現在は多数の貢献者からなるコミュニティによって開発されている。
+vLLMは、カリフォルニア大学バークレー校のSky Computing Labで開発され、2023年の[[SOSP]]で論文 "Efficient Memory Management for Large Language Model Serving with PagedAttention"（Kwonら）として発表された。現在は多数の貢献者からなるコミュニティによって開発されている。
 
 論文が指摘した問題は、KVキャッシュのメモリの無駄である。KVキャッシュは要求ごとに生成の進行とともに伸び、最終的な長さは事前に分からない。従来のシステムは、要求ごとに最大の長さ分の連続したメモリを確保していたため、使われない領域や断片化によって、[[GPU]]メモリの多くが無駄になり、同時に処理できる要求の数が制限されていた。PagedAttentionは、OSの[[Virtual Memory|仮想記憶]]におけるページングに倣って、KVキャッシュを固定長のブロックに分割し、論理的に連続したキャッシュを物理的には不連続なブロックに格納する。ブロックは必要になった時点で割り当てられ、対応表（ブロックテーブル）で管理される。これにより、メモリの無駄はほぼなくなり、同じプロンプトを共有する要求の間や、一つの要求から複数の候補を生成する場合に、ブロックを共有することもできる。論文は、同程度の[[Latency|レイテンシ]]で、既存のシステムに比べてスループットが2〜4倍に向上したと報告している。
 

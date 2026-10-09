@@ -15,7 +15,7 @@ MLSysは2018年に SysML（Conference on Systems and Machine Learning）の名�
 扱う題材は、[[GPU]]などのハードウェアの上での学習と推論の効率化、[[LLM]]の推論のサービング、分散学習など、機械学習を動かすためのシステム全般にわたる。採録論文は proceedings.mlsys.org で公開されている。
 
 ## どこで出てくるか
-LLMの推論システムや[[KV Cache]]の管理、GPUの間の通信など、[[Machine Learning Systems|機械学習システム]]の研究で関連研究を調べるときに、MLSysの論文に出会う。同じ題材の論文は、OSDIやSOSPなどのシステムの国際会議、NeurIPSなどの機械学習の国際会議にも投稿されるため、MLSysだけでなくそれらも併せて確認する必要がある。
+LLMの推論システムや[[KV Cache]]の管理、GPUの間の通信など、[[Machine Learning Systems|機械学習システム]]の研究で関連研究を調べるときに、MLSysの論文に出会う。同じ題材の論文は、[[OSDI]]や[[SOSP]]などのシステムの国際会議、NeurIPSなどの機械学習の国際会議にも投稿されるため、MLSysだけでなくそれらも併せて確認する必要がある。
 
 ## 関係
 - 上位概念: [[Peer Review]]（査読付きの国際会議）
