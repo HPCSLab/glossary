@@ -1,9 +1,9 @@
 ---
 aliases: [メタデータ, File System Metadata, ファイルシステムのメタデータ, Metadata Operation, メタデータ操作, mdtest, Small Files, 小さなファイル]
 tags: [term]
-maps: ["[[Storage]]"]
+maps: ["[[HPC Storage]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # Metadata（メタデータ）
 

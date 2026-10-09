@@ -1,9 +1,9 @@
 ---
 aliases: [mochi-margo, Mochi, Thallium]
 tags: [term]
-maps: ["[[Parallel Computing]]", "[[Storage]]", "[[Network]]"]
+maps: ["[[HPC Storage]]", "[[Network]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # Margo（mochi-margo）
 

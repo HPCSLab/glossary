@@ -1,9 +1,9 @@
 ---
 aliases: [ローカルストレージ, ノードローカルストレージ, Local Storage, Node-local SSD, ローカルディスク, /scratch, Local File System, ローカルファイルシステム]
 tags: [term]
-maps: ["[[Storage]]"]
+maps: ["[[HPC Storage]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # Node-local Storage（ローカルストレージ）
 

@@ -1,9 +1,9 @@
 ---
 aliases: [ExaScaler, DDN EXAScaler, DDN, DataDirect Networks, ES400NVX2, Whamcloud]
 tags: [term]
-maps: ["[[Storage]]"]
+maps: ["[[HPC Storage]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # EXAScaler
 

@@ -1,9 +1,9 @@
 ---
 aliases: [Collective I/O, 集団I/O, 集団的I/O, Two-phase I/O, 二段階I/O, Collective Buffering, Aggregator, アグリゲータ, 集約役, Data Sieving, データシービング, cb_nodes, cb_buffer_size, romio_cb_write, MPI_File_write_all]
 tags: [term]
-maps: ["[[Parallel Computing]]", "[[Storage]]"]
+maps: ["[[Parallel Computing]]", "[[HPC Storage]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # Collective I/O（集団I/O）
 

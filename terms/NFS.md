@@ -1,9 +1,9 @@
 ---
 aliases: [Network File System, NFSv3, NFSv4, NFSv4.1, pNFS, Parallel NFS, Close-to-Open, close-to-open一貫性, actimeo]
 tags: [term]
-maps: ["[[Storage]]", "[[Network]]"]
+maps: ["[[HPC Storage]]", "[[Network]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # NFS
 

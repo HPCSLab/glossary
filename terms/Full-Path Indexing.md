@@ -1,9 +1,9 @@
 ---
 aliases: [full path indexing, Full Path Indexing, フルパスインデックス, フルパスによる索引, Range Rename, Relative-Path Indexing, Zoning, Indirection, "The Full Path to Full-Path Indexing"]
 tags: [term]
-maps: ["[[Storage]]"]
+maps: ["[[Storage]]", "[[HPC Storage]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # Full-Path Indexing（フルパスインデックス）
 

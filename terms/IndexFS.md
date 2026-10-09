@@ -1,9 +1,9 @@
 ---
 aliases: [indexfs, GIGA+, TableFS, Bulk Insertion, Stateless Caching]
 tags: [term]
-maps: ["[[Storage]]"]
+maps: ["[[HPC Storage]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # IndexFS
 

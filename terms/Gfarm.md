@@ -1,9 +1,9 @@
 ---
 aliases: [gfarm, Gfarm file system, Gfarmファイルシステム, Grid Datafarm, gfmd, gfsd, gfarm2fs, GfarmFS-FUSE, Gfarm/BB, HPCI共用ストレージ, HPCI Shared Storage]
 tags: [term]
-maps: ["[[Storage]]"]
+maps: ["[[HPC Storage]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # Gfarm
 

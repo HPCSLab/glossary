@@ -1,9 +1,9 @@
 ---
 aliases: [Distributed Asynchronous Object Storage, DAOS Foundation, libdaos, dfuse, DFS]
 tags: [term]
-maps: ["[[Storage]]"]
+maps: ["[[HPC Storage]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # DAOS
 

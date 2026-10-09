@@ -1,9 +1,9 @@
 ---
 aliases: [mercury, Mercury RPC, RPC, Remote Procedure Call, 遠隔手続き呼び出し, Bulk Transfer, NA Plugin]
 tags: [term]
-maps: ["[[Parallel Computing]]", "[[Storage]]", "[[Network]]"]
+maps: ["[[HPC Storage]]", "[[Network]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # Mercury
 

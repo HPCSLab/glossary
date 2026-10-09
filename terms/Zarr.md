@@ -1,9 +1,9 @@
 ---
 aliases: [zarr, Zarr v3, Zarr v2]
 tags: [term]
-maps: ["[[Scientific Data]]", "[[Storage]]"]
+maps: ["[[Scientific Data]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # Zarr
 

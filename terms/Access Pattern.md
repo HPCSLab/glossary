@@ -1,9 +1,9 @@
 ---
 aliases: [I/O Access Pattern, IO Access Pattern, アクセスパターン, I/Oパターン, I/Oのアクセスパターン, Sequential Access, 逐次アクセス, シーケンシャルアクセス, Random Access, ランダムアクセス, N-N, N-1, File-per-process, Shared File, 共有ファイル, N-1 Strided, Strided Access, ストライドアクセス, PLFS]
 tags: [term]
-maps: ["[[Storage]]", "[[Parallel Computing]]"]
+maps: ["[[HPC Storage]]", "[[Parallel Computing]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # Access Pattern（I/Oのアクセスパターン）
 

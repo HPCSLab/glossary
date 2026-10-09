@@ -1,9 +1,9 @@
 ---
 aliases: [並列ファイルシステム, PFS, Parallel Filesystem]
 tags: [term]
-maps: ["[[Storage]]"]
+maps: ["[[HPC Storage]]"]
 status: draft
-updated: 2026-10-05
+updated: 2026-10-10
 ---
 # Parallel File System（並列ファイルシステム）
 

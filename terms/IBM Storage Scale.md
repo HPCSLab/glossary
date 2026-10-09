@@ -1,9 +1,9 @@
 ---
 aliases: [GPFS, General Parallel File System, IBM Spectrum Scale, Spectrum Scale, Storage Scale, NSD, Network Shared Disk]
 tags: [term]
-maps: ["[[Storage]]"]
+maps: ["[[HPC Storage]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # IBM Storage Scale（GPFS）
 

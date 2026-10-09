@@ -1,9 +1,9 @@
 ---
 aliases: [一貫性モデル, 整合性モデル, Memory Consistency Model, メモリ一貫性モデル, Eventual Consistency, 結果整合性, Causal Consistency, 因果一貫性, Sequential Consistency, 逐次一貫性, Read Your Writes, TSO, Close-to-Open Consistency]
 tags: [term]
-maps: ["[[Distributed Systems]]", "[[Storage]]"]
+maps: ["[[Distributed Systems]]", "[[HPC Storage]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # Consistency Model（一貫性モデル）
 

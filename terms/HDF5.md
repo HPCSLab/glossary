@@ -1,9 +1,9 @@
 ---
 aliases: [Hierarchical Data Format 5, HDF, h5py, Parallel HDF5, PHDF5, .h5]
 tags: [term]
-maps: ["[[Scientific Data]]", "[[Storage]]"]
+maps: ["[[Scientific Data]]", "[[HPC Storage]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # HDF5
 

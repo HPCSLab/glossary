@@ -1,9 +1,9 @@
 ---
 aliases: [Distributed Namespace, Distributed Namespace Environment, Lustre DNE, Remote Directory, リモートディレクトリ, Striped Directory, ストライプディレクトリ, "lfs mkdir -i", "lfs mkdir -c", MDT, MDT0000]
 tags: [term]
-maps: ["[[Storage]]"]
+maps: ["[[HPC Storage]]"]
 status: draft
-updated: 2026-10-09
+updated: 2026-10-10
 ---
 # DNE（Distributed Namespace）
 

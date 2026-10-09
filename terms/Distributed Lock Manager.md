@@ -1,9 +1,9 @@
 ---
 aliases: [DLM, DLM Lock, DLMロック, 分散ロックマネージャ, 分散ロック, Distributed Lock, LDLM, Lustre Distributed Lock Manager, Extent Lock, エクステントロック, Inodebits Lock, Blocking AST, Completion AST, Glimpse AST, Lock Mode, ロックモード]
 tags: [term]
-maps: ["[[Storage]]"]
+maps: ["[[HPC Storage]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # Distributed Lock Manager（分散ロックマネージャ）
 

@@ -1,9 +1,9 @@
 ---
 aliases: [RADOS, CRUSH, CephFS, RBD, RADOS Gateway, RGW, OSD, BlueStore, Placement Group]
 tags: [term]
-maps: ["[[Storage]]", "[[Distributed Systems]]"]
+maps: ["[[HPC Storage]]", "[[Distributed Systems]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # Ceph
 

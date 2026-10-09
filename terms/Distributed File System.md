@@ -1,9 +1,9 @@
 ---
 aliases: [分散ファイルシステム, Clustered File System, クラスタファイルシステム, Shared-Disk File System, 共有ディスクファイルシステム]
 tags: [term]
-maps: ["[[Storage]]"]
+maps: ["[[HPC Storage]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # Distributed File System（分散ファイルシステム）
 

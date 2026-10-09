@@ -1,9 +1,9 @@
 ---
 aliases: [libzpoline, System Call Hook, システムコールフック, Syscall Hooking, システムコールの横取り, CHFS-zpoline, mmap_min_addr]
 tags: [term]
-maps: ["[[Operating System]]"]
+maps: ["[[Operating System]]", "[[Storage]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # zpoline
 

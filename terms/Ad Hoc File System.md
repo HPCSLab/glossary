@@ -1,9 +1,9 @@
 ---
 aliases: [アドホックファイルシステム, Ad-hoc File System, Ad Hoc Parallel File System, Burst Buffer, バーストバッファ, BeeOND, BeeGFS On Demand, BurstFS]
 tags: [term]
-maps: ["[[Storage]]"]
+maps: ["[[HPC Storage]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # Ad Hoc File System（アドホックファイルシステム）
 

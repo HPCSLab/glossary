@@ -1,9 +1,9 @@
 ---
 aliases: [PCC, Persistent Client Cache, LPCC, RW-PCC, RO-PCC, lfs pcc]
 tags: [term]
-maps: ["[[Storage]]"]
+maps: ["[[HPC Storage]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # Lustre PCC（Persistent Client Cache）
 

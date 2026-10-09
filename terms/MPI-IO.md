@@ -1,9 +1,9 @@
 ---
 aliases: [MPI I/O, MPI_File, ROMIO, 並列I/O]
 tags: [term]
-maps: ["[[Parallel Computing]]", "[[Storage]]"]
+maps: ["[[Parallel Computing]]", "[[HPC Storage]]"]
 status: draft
-updated: 2026-10-05
+updated: 2026-10-10
 ---
 # MPI-IO
 

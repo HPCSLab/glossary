@@ -1,9 +1,9 @@
 ---
 aliases: [chfs, Consistent Hashing File System, CHFS-zpoline]
 tags: [term]
-maps: ["[[Storage]]"]
+maps: ["[[HPC Storage]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # CHFS
 

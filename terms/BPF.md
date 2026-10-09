@@ -1,9 +1,9 @@
 ---
 aliases: [eBPF, Extended BPF, Berkeley Packet Filter, BSD Packet Filter, cBPF, bcc, libbpf, XDP, sched_ext]
 tags: [term]
-maps: ["[[Storage]]", "[[Operating System]]"]
+maps: ["[[Operating System]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # BPF
 

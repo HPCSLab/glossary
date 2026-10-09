@@ -1,9 +1,9 @@
 ---
 aliases: [Lustre File System, ラスター, LNet, ldiskfs, MDS, MDT, OSS, OST]
 tags: [term]
-maps: ["[[Storage]]"]
+maps: ["[[HPC Storage]]"]
 status: draft
-updated: 2026-10-05
+updated: 2026-10-10
 ---
 # Lustre
 

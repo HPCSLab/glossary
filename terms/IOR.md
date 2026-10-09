@@ -1,9 +1,9 @@
 ---
 aliases: [ior, IOR Benchmark]
 tags: [term]
-maps: ["[[Storage]]", "[[Parallel Computing]]"]
+maps: ["[[HPC Storage]]", "[[Parallel Computing]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # IOR
 

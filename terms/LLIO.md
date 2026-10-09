@@ -1,9 +1,9 @@
 ---
 aliases: [Lightweight Layered IO Accelerator, Lightweight Layered I/O Accelerator, 第1階層ストレージ]
 tags: [term]
-maps: ["[[Storage]]"]
+maps: ["[[HPC Storage]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # LLIO
 
