@@ -12,7 +12,7 @@ updated: 2026-10-10
 ## 概要
 PegasusはNECが構築し、筑波大学計算科学研究センターで2023年1月に稼働を開始した。発表の段階では仮称Cygnus-BDとされていた。第4世代Intel Xeonスケーラブル・プロセッサ（Sapphire Rapids）、[[PCIe]] Gen5で接続したNVIDIA H100 GPU、そして次世代のIntel Optane永続メモリの三つを組み合わせた、世界で最初期のシステムである。
 
-各[[Compute Node|計算ノード]]は、[[GPU]]（H100、倍精度の理論ピーク性能51TFlops）、128GBのDDR5メモリ、2TBの[[Intel Optane Persistent Memory|Intel Optane永続メモリ]]（300シリーズ）、3.2TBの[[NVMe]] SSD 2台を備える。永続メモリによって、DRAMだけでは収まらない大規模なデータを扱えるようにしており、ビッグデータ解析、人工知能、大規模な計算科学を対象としている。当初は120ノード、理論ピーク性能約6PFlopsで構成され、現在は150ノード、理論ピーク性能8.1PFlops以上である。ノード間は[[InfiniBand]]で接続される。
+各[[Compute Node|計算ノード]]は、[[GPU]]（H100、倍精度の理論ピーク性能51TFlops）、128GBの[[DRAM|DDR5メモリ]]、2TBの[[Intel Optane Persistent Memory|Intel Optane永続メモリ]]（300シリーズ）、3.2TBの[[NVMe]] SSD 2台を備える。永続メモリによって、DRAMだけでは収まらない大規模なデータを扱えるようにしており、ビッグデータ解析、人工知能、大規模な計算科学を対象としている。当初は120ノード、理論ピーク性能約6PFlopsで構成され、現在は150ノード、理論ピーク性能8.1PFlops以上である。ノード間は[[InfiniBand]]で接続される。
 
 [[Parallel File System|並列ファイルシステム]]として、7.1PB（40GB/s）の[[EXAScaler|DDN EXAScaler]]（[[Lustre]]）を備える。
 

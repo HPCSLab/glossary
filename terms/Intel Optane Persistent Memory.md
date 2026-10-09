@@ -7,7 +7,7 @@ updated: 2026-10-10
 ---
 # Intel Optane Persistent Memory（永続メモリ）
 
-> DRAMと同じメモリスロットに装着し、CPUからバイト単位で読み書きでき、かつ電源を切ってもデータが失われない、Intelのメモリ製品である。
+> [[DRAM]]と同じメモリスロットに装着し、CPUからバイト単位で読み書きでき、かつ電源を切ってもデータが失われない、Intelのメモリ製品である。
 
 ## 概要
 Optane Persistent Memory（PMem）は、IntelとMicronが共同開発した不揮発性メモリの技術3D XPointを用いた製品であり、2019年に第2世代Xeonスケーラブル・プロセッサ（Cascade Lake）とともに登場した。DRAMよりも大容量かつ安価で、NAND型の[[SSD]]よりもはるかに低遅延であり、両者の中間に位置する。一方で、DRAMと比べると、読み書きの[[Latency|レイテンシ]]は大きく、特に書き込みの[[Bandwidth|バンド幅]]は低い。
