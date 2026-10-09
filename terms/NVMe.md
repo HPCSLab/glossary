@@ -1,9 +1,9 @@
 ---
 aliases: [NVM Express, NVMe SSD, Namespace, 名前空間]
 tags: [term]
-maps: ["[[Storage]]", "[[Network]]"]
+maps: ["[[Storage]]"]
 status: draft
-updated: 2026-10-05
+updated: 2026-10-10
 ---
 # NVMe
 
