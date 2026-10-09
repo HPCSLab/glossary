@@ -21,6 +21,7 @@ updated: 2026-10-10
 
 ## 扱う道具
 - [[NumPy]] — データを読み込んだ先の多次元配列である（[[Programming]]を参照）。
+- [[DuckDB]] — サーバを立てずにParquetなどのファイルをSQLで集計できる、組み込み型の分析向けデータベースである。
 
 ## 関連する分野
 - [[HPC Storage]] — Parallel HDF5やPnetCDFが用いるMPI-IOと、HPCにおける主要な格納先である[[Parallel File System|並列ファイルシステム]]を扱う。
