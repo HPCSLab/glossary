@@ -1,9 +1,9 @@
 ---
 aliases: [numpy, ndarray, np, Broadcasting, ブロードキャスト, Vectorization, ベクトル化, Strides, ストライド]
 tags: [term]
-maps: ["[[Programming]]"]
+maps: ["[[Programming]]", "[[Scientific Data]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # NumPy
 
