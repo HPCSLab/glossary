@@ -1,7 +1,7 @@
 ---
 aliases: [S3, Amazon Simple Storage Service, S3 API, S3互換, ShardStore, S3 Glacier]
 tags: [term]
-maps: ["[[Storage]]", "[[Distributed Systems]]"]
+maps: ["[[HPC Storage]]", "[[Distributed Systems]]"]
 status: draft
 updated: 2026-10-10
 ---
