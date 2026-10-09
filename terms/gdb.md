@@ -3,7 +3,7 @@ aliases: [GDB, GNU Debugger, GNUデバッガ, デバッガ, Debugger, Breakpoint
 tags: [term]
 maps: ["[[Operating System]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # gdb（GNU Debugger）
 
@@ -19,7 +19,7 @@ gdbは、gdbの中で起動したプログラムだけでなく、`gdb -p <PID>`
 ## どこで出てくるか
 プログラムがセグメンテーション違反などで異常終了した場合、gdbで実行するかコアファイルを読み込み、`bt` でどこで落ちたかを確かめるのが最初の手順である。プログラムが止まったまま進まない場合も、`gdb -p` で接続して各[[Thread|スレッド]]のスタックを調べると、[[Deadlock|デッドロック]]などの原因を特定できる。
 
-gdbはカーネルのデバッグにも用いられる。[[QEMU]]の仮想マシンでは、QEMUが待ち受けるgdbに接続して、ゲストのカーネルをステップ実行できる。カーネルのダンプファイルを解析する[[crash]]も、内部でgdbの機能を用いている。
+gdbはカーネルのデバッグにも用いられる。[[QEMU]]の[[Virtual Machine|仮想マシン]]では、QEMUが待ち受けるgdbに接続して、ゲストのカーネルをステップ実行できる。カーネルのダンプファイルを解析する[[crash]]も、内部でgdbの機能を用いている。
 
 ## 関係
 - 使う / 使われる: [[C]], [[Rust]], [[QEMU]], [[crash]]

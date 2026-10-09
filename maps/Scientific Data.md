@@ -18,6 +18,6 @@ updated: 2026-10-10
 - [[NumPy]] — データを読み込んだ先の多次元配列である（[[Programming]]を参照）。
 
 ## 関連する分野
-- [[HPC Storage]] — Parallel HDF5やPnetCDFが用いるMPI-IOと、HPCにおける主要な格納先である並列ファイルシステムを扱う。
+- [[HPC Storage]] — Parallel HDF5やPnetCDFが用いるMPI-IOと、HPCにおける主要な格納先である[[Parallel File System|並列ファイルシステム]]を扱う。
 - [[Storage]] — クラウドにおける主要な格納先であるオブジェクトストレージを扱う。
 - [[Programming]] — Pythonと、データを扱うライブラリを扱う。

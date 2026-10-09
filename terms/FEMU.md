@@ -10,9 +10,9 @@ updated: 2026-10-10
 > [[QEMU]]と[[KVM]]を基盤とし、SSDの内部構造と振る舞いまでを模擬する、研究用のNVMe SSDエミュレータである。
 
 ## 概要
-FEMUは、シカゴ大学のHuaicheng Liらが開発し、2018年のFAST（USENIX Conference on File and Storage Technologies）で発表された。論文の題名は "The CASE of FEMU: Cheap, Accurate, Scalable and Extensible Flash Emulator" であり、安価（オープンソースで無償）、正確、スケーラブル、拡張可能であることを掲げている。現在はバージニア工科大学のMoatLabが保守している。
+FEMUは、シカゴ大学のHuaicheng Liらが開発し、2018年の[[FAST]]（USENIX Conference on File and Storage Technologies）で発表された。論文の題名は "The CASE of FEMU: Cheap, Accurate, Scalable and Extensible Flash Emulator" であり、安価（オープンソースで無償）、正確、スケーラブル、拡張可能であることを掲げている。現在はバージニア工科大学のMoatLabが保守している。
 
-[[SSD]]の研究には二つの障壁がある。市販のSSDは、FTLやガベージコレクションなどの内部の処理が非公開で変更できない。一方、内部を変更できる研究用のハードウェアは高価で入手が難しい。また、SSDのシミュレータの多くは、アプリケーションやOSを実際に動かさずに、記録したI/Oの系列を入力として内部の振る舞いだけを計算するものであった。FEMUは、仮想マシンのNVMeデバイスとしてSSDを模擬し、フラッシュメモリの読み書きと消去の遅延、チャネルやチップの並列性を再現する。そのため、ゲストの中で実際のアプリケーション、ファイルシステム、カーネルを動作させたまま、SSDの内部の設計を変更して、その影響を全体として評価できる。
+[[SSD]]の研究には二つの障壁がある。市販のSSDは、FTLやガベージコレクションなどの内部の処理が非公開で変更できない。一方、内部を変更できる研究用のハードウェアは高価で入手が難しい。また、SSDのシミュレータの多くは、アプリケーションやOSを実際に動かさずに、記録したI/Oの系列を入力として内部の振る舞いだけを計算するものであった。FEMUは、[[Virtual Machine|仮想マシン]]のNVMeデバイスとしてSSDを模擬し、フラッシュメモリの読み書きと消去の[[Latency|遅延]]、チャネルやチップの並列性を再現する。そのため、ゲストの中で実際のアプリケーション、ファイルシステム、カーネルを動作させたまま、SSDの内部の設計を変更して、その影響を全体として評価できる。
 
 FEMUには複数の動作形態がある。BlackBox（BBSSD）は、FTLとガベージコレクションを内部に持つ一般的な市販のSSDを模擬する。WhiteBox（OCSSD）は、FTLをホスト側が担うOpen-Channel SSDを模擬する。ZNSは、[[NVMe]]のZoned Namespacesに対応した装置を模擬する。NoSSDは、遅延を最小限にしたメモリ上の装置として動作する。
 

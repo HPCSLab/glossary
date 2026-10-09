@@ -3,11 +3,11 @@ aliases: [incus, LXD, LXC, liblxc, Linux Containers, System Container, システ
 tags: [term]
 maps: ["[[Operating System]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # Incus
 
-> システムコンテナ、アプリケーションコンテナ、仮想マシンを、同じコマンドとREST APIで作成・管理するための、オープンソースの管理ツールである。
+> システムコンテナ、アプリケーションコンテナ、[[Virtual Machine|仮想マシン]]を、同じコマンドとREST APIで作成・管理するための、オープンソースの管理ツールである。
 
 ## 概要
 Incusは、CanonicalのLXDのフォークである。CanonicalがLXDをLinux Containersのプロジェクトから自社の管理に移したことを受けて、Aleksa Sarai がフォークを作成し、2023年8月にLinux Containersのプロジェクトとして公開された。開発は、かつてLXDを作った開発者らが中心となって行われている。Goで書かれ、Apache 2.0ライセンスのもとで公開されている。長期サポート版（LTS）のIncus 6.0は、2029年6月まで保守される。
