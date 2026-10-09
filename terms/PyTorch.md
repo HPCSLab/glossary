@@ -3,7 +3,7 @@ aliases: [pytorch, torch, Tensor, テンソル, autograd, Autograd, 自動微分
 tags: [term]
 maps: ["[[Machine Learning Systems]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # PyTorch
 
@@ -15,7 +15,7 @@ PyTorchは、Meta AI（旧Facebook AI Research）が開発し、2016年9月に�
 PyTorchの基本のデータ構造はテンソル（多次元の配列）であり、CPUやGPUの上で扱う。GPUでの演算には[[CUDA]]などを用いる。自動微分の機能（autograd）は、演算を実行するたびにその履歴をグラフとして記録し、出力から入力へとたどって連鎖律により勾配を計算する（逆方向の自動微分）。演算を実行しながらグラフを作るため、Pythonの通常の制御構文をそのまま使ってモデルを書ける。2023年3月のPyTorch 2.0では、Pythonのコードを解析してモデルを最適化し、コンパイルする `torch.compile` が導入された。
 
 ## どこで出てくるか
-深層学習の研究では、モデルの記述と学習に広く用いられている。[[Hugging Face]]のTransformersなどのライブラリもPyTorchの上で動く。複数のGPUやノードを用いる学習では、`torch.distributed` が通信の機能を提供し、その通信の実装（バックエンド）として、NVIDIAのGPUの間の通信ライブラリNCCL、Gloo、[[MPI]]などを選べる。`DistributedDataParallel`（DDP）は、各GPUがモデルの複製を持ち、それぞれのデータで計算した勾配を[[Collective Communication|集団通信]]で同期するデータ並列の学習を提供する。学習したモデルは、[[ONNX]]の形式に書き出して他の環境で推論することもできる。
+深層学習の研究では、モデルの記述と学習に広く用いられている。[[Hugging Face]]のTransformersなどのライブラリもPyTorchの上で動く。複数のGPUやノードを用いる学習では、`torch.distributed` が通信の機能を提供し、その通信の実装（バックエンド）として、NVIDIAのGPUの間の通信ライブラリ[[NCCL]]、Gloo、[[MPI]]などを選べる。`DistributedDataParallel`（DDP）は、各GPUがモデルの複製を持ち、それぞれのデータで計算した勾配を[[Collective Communication|集団通信]]で同期するデータ並列の学習を提供する。学習したモデルは、[[ONNX]]の形式に書き出して他の環境で推論することもできる。
 
 ## 関係
 - 使う / 使われる: [[Python]], [[CUDA]], [[GPU]], [[Collective Communication]], [[MPI]]
