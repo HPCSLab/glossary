@@ -43,6 +43,9 @@ updated: 2026-10-10
 - [[GPUDirect Storage]] — 記憶装置とGPUのメモリの間で直接データを転送する技術である。
 - [[BaM]] — GPUのスレッドがNVMe SSDへのアクセスを直接発行するシステムである。
 
+## 研究成果の発表
+- [[MLSys]] — 機械学習とシステムの境界領域を扱う国際会議である。
+
 ## 関連する分野
 - [[Parallel Computing]] — 学習の並列化と集団通信を扱う。
 - [[Operating System]] — PagedAttentionの着想の元である仮想記憶を扱う。
