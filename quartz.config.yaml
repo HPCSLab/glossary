@@ -162,6 +162,9 @@ plugins:
     enabled: true
   - source: "@quartz-community/explorer"
     enabled: true
+    options:
+      # Hide tags (the default) and figures/; figures are embedded in term notes instead.
+      filterFn: '(node) => node.slugSegment !== "tags" && node.slugSegment !== "figures"'
     layout:
       position: left
       priority: 50
