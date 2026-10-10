@@ -3,7 +3,7 @@ aliases: [Dragonfly, ドラゴンフライ, Dragonfly Network, Dragonflyトポ�
 tags: [term]
 maps: ["[[Network]]", "[[Parallel Computing]]"]
 status: draft
-updated: 2026-10-10
+updated: 2026-10-11
 ---
 # Dragonfly Topology（Dragonflyトポロジ）
 
@@ -11,6 +11,8 @@ updated: 2026-10-10
 
 ## 概要
 Dragonflyは、Kim、Dally、Scott、Abtsが、2008年のISCAで提案した。大規模なネットワークの費用の多くはケーブル、特に筐体の間をつなぐ長いケーブルが占める。Dragonflyは、ポート数（radix）の多いスイッチをグループにまとめ、グループの内部は短いケーブルで密に結び、各グループから他の全てのグループへは少数のグローバルなリンクで直接結ぶ。これにより、グループ全体が非常にポート数の多い一つの仮想的なスイッチのように働き、少ない長いケーブルで多くのノードを結べる。最短の経路をとるパケットは、グローバルなリンクを高々一度しか通らない。
+
+![[Dragonfly Groups and Links.excalidraw]]
 
 論文では、1万6千ノード以上の構成で、Flattened Butterflyに比べて約20%、折り返し型のClos網（folded Clos）に比べて約52%、費用を減らせるとしている。一方、グローバルなリンクに通信が集中すると混雑しやすいため、負荷に応じて他のグループを経由する経路を選ぶ適応的な経路制御が必要となる。論文は、そのための経路制御の方式も提案している。
 
