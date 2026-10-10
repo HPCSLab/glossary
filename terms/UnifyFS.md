@@ -10,7 +10,7 @@ updated: 2026-10-10
 > スーパーコンピュータの[[Compute Node|計算ノード]]のローカルな記憶装置に対して、ジョブの実行中だけ存在する共有の名前空間を提供する、ユーザレベルの一時的なファイルシステムである。
 
 ## 概要
-UnifyFSは、米国のローレンス・リバモア国立研究所（LLNL）とオークリッジ国立研究所（ORNL）が開発しており、2023年のIPDPSで論文 "UnifyFS: A User-level Shared File System for Unified Access to Distributed Local Storage" として発表された。この論文は、IPDPSで初めて設けられた、オープンソースへの貢献に対する最優秀賞を受けた。
+UnifyFSは、米国の[[LLNL|ローレンス・リバモア国立研究所（LLNL）]]と[[ORNL|オークリッジ国立研究所（ORNL）]]が開発しており、2023年のIPDPSで論文 "UnifyFS: A User-level Shared File System for Unified Access to Distributed Local Storage" として発表された。この論文は、IPDPSで初めて設けられた、オープンソースへの貢献に対する最優秀賞を受けた。
 
 UnifyFSの目的は、計算ノードのローカルな高速の記憶装置（[[Burst Buffer|バーストバッファ]]）を、センター全体の[[Parallel File System|並列ファイルシステム]]と同じくらい容易に使えるようにすることである。アプリケーションはUnifyFSのクライアントのライブラリとリンクして用いる。このライブラリが入出力の呼び出しを横取りし、UnifyFSのファイルに対する要求をUnifyFSのサーバに送り、それ以外のファイルの要求は通常のシステムに渡す。UnifyFSはジョブの実行中にのみ存在し、サーバが終了するとファイルシステムも消える。そのため、ジョブの後も残す必要のあるデータは、UnifyFSが提供するAPIやツールで、常設のファイルシステムへ明示的に移す必要がある。チェックポイントとリスタートのような、HPCのアプリケーションに典型的な一括同期型の入出力を主な対象としている。
 

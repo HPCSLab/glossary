@@ -3,7 +3,7 @@ aliases: [AMD APU, Accelerated Processing Unit, MI300A, AMD Instinct MI300A, Uni
 tags: [term]
 maps: ["[[Parallel Computing]]", "[[Machine Learning Systems]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # APU（AMD APU）
 
@@ -17,7 +17,7 @@ APUの重要な特徴は、CPUとGPUによるメモリの共有である。2014�
 APUは、モバイル、デスクトップから、データセンターまでの各分野で開発が続けられている。データセンター向けのAMD Instinct MI300Aは、CPU（24コアのEPYC Zen 4）、GPU（CDNA3）、128GBの[[HBM]]（HBM3）を一つのパッケージに統合しており、CPUとGPUがこの高バンド幅のメモリを共有する。
 
 ## どこで出てくるか
-MI300Aは、大規模なスーパーコンピュータに採用されている。米国ローレンス・リバモア国立研究所のEl Capitanは、MI300Aを搭載し、[[LINPACK]]の性能1,809PFlop/sで、2024年11月から2025年6月まで[[TOP500]]の首位であった。国内では、筑波大学計算科学研究センターの[[Sirius]]が、各ノードに4基のMI300Aを搭載し、国立大学のスーパーコンピュータとして初めてAMDのAPUを採用した。Siriusの発表は、MI300AによってCPUとGPUの間のメモリの転送が不要になることを、その特徴として挙げている。
+MI300Aは、大規模なスーパーコンピュータに採用されている。米国[[LLNL|ローレンス・リバモア国立研究所]]のEl Capitanは、MI300Aを搭載し、[[LINPACK]]の性能1,809PFlop/sで、2024年11月から2025年6月まで[[TOP500]]の首位であった。国内では、筑波大学計算科学研究センターの[[Sirius]]が、各ノードに4基のMI300Aを搭載し、国立大学のスーパーコンピュータとして初めてAMDのAPUを採用した。Siriusの発表は、MI300AによってCPUとGPUの間のメモリの転送が不要になることを、その特徴として挙げている。
 
 ## 関係
 - 使う / 使われる: [[GPU]], [[HBM]]

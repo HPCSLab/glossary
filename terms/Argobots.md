@@ -3,11 +3,11 @@ aliases: [argobots, User-Level Thread, ユーザレベルスレッド, ULT, Task
 tags: [term]
 maps: ["[[Parallel Computing]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # Argobots
 
-> アルゴンヌ国立研究所が中心となって開発する、OSのスレッドより軽量なユーザレベルスレッドとタスクを提供する、HPC向けの低水準のスレッドの枠組みである。
+> [[Argonne|アルゴンヌ国立研究所]]が中心となって開発する、OSのスレッドより軽量なユーザレベルスレッドとタスクを提供する、HPC向けの低水準のスレッドの枠組みである。
 
 ## 概要
 Argobotsは、OpenMPやMPIなどの高水準のプログラミングモデルや実行時システムの土台となることを目的として設計された。論文は2018年に IEEE Transactions on Parallel and Distributed Systems（TPDS）で発表されている。

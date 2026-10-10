@@ -10,7 +10,7 @@ updated: 2026-10-10
 > HPCとAIのために設計された、ユーザ空間で動作する分散[[Object Storage|オブジェクトストレージ]]であり、高い[[Bandwidth|バンド幅]]とIOPS、低いレイテンシを特徴とする。正式名称は Distributed Asynchronous Object Storage である。
 
 ## 概要
-DAOSは、もとはIntelが開発したオープンソースのストレージシステムであり、現在はLinux Foundation傘下のDAOS Foundationが開発を統括している。米国アルゴンヌ国立研究所のスーパーコンピュータAurora、ドイツのライプニッツ・スーパーコンピューティング・センターのSuperMUC-NG、Google CloudのParallelstoreなどで用いられている。
+DAOSは、もとはIntelが開発したオープンソースのストレージシステムであり、現在はLinux Foundation傘下のDAOS Foundationが開発を統括している。米国[[Argonne|アルゴンヌ国立研究所]]のスーパーコンピュータAurora、ドイツのライプニッツ・スーパーコンピューティング・センターのSuperMUC-NG、Google CloudのParallelstoreなどで用いられている。
 
 DAOSの設計上の最大の特徴は、OSのカーネルを経由しないことである。サーバは[[NVMe]] [[SSD]]に[[SPDK]]を用いてユーザ空間から直接アクセスし、クライアントとサーバの間の通信は[[RDMA]]を含む高速ネットワークのインタフェース（[[libfabric|OFI]]）を用いて行う。これにより、[[System Call|システムコール]]、[[Page Cache|ページキャッシュ]]、[[blk-mq|ブロック層]]といったカーネルのI/O経路のオーバーヘッドを避ける。記憶媒体は二層に分かれ、[[Metadata|メタデータ]]や小さなデータのような[[Latency|レイテンシ]]に敏感なI/Oは高速なメモリ層に、大きなデータはNVMe SSDに置かれる。
 
