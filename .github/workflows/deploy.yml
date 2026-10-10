@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+  # Build only (no deploy) so a broken note fails the PR before it reaches main.
+  pull_request:
   workflow_dispatch:
 
 permissions:
@@ -12,7 +14,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: ${{ github.event_name == 'pull_request' && format('build-{0}', github.ref) || 'pages' }}
   cancel-in-progress: false
 
 env:
@@ -57,11 +59,13 @@ jobs:
           # Quartz writes baseUrl's host to CNAME; no custom domain is used.
           rm -f public/CNAME
       - name: Upload artifact
+        if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v3
         with:
           path: quartz/public
 
   deploy:
+    if: github.event_name != 'pull_request'
     needs: build
     environment:
       name: github-pages
