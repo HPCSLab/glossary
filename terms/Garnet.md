@@ -1,9 +1,9 @@
 ---
 aliases: [garnet, Microsoft Garnet, Tsavorite, FASTER, RESP, Redis Serialization Protocol]
 tags: [term]
-maps: ["[[Storage]]"]
+maps: ["[[Databases]]"]
 status: draft
-updated: 2026-10-09
+updated: 2026-10-10
 ---
 # Garnet
 

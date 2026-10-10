@@ -1,9 +1,9 @@
 ---
 aliases: [LSM Tree, LSM木, Log-Structured Merge-Tree, ログ構造化マージ木, Compaction, コンパクション, Memtable, SSTable, SST, Leveled Compaction, Tiered Compaction, Write Amplification, Read Amplification, Space Amplification]
 tags: [term]
-maps: ["[[Storage]]", "[[Data Structures]]"]
+maps: ["[[Storage]]", "[[Data Structures]]", "[[Databases]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # LSM-Tree（LSM木）
 

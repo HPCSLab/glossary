@@ -1,7 +1,7 @@
 ---
 aliases: [ansible, ansible-playbook, Playbook, プレイブック, Ansible Inventory, Ansible Role, 構成管理]
 tags: [term]
-maps: ["[[Operating System]]"]
+maps: ["[[System Administration]]"]
 status: draft
 updated: 2026-10-10
 ---

@@ -1,7 +1,7 @@
 ---
 aliases: [Multiversion Concurrency Control, Multi-Version Concurrency Control, 多版同時実行制御, マルチバージョン同時実行制御, VACUUM, Undo Log, undoログ]
 tags: [term]
-maps: ["[[Distributed Systems]]"]
+maps: ["[[Databases]]"]
 status: draft
 updated: 2026-10-10
 ---

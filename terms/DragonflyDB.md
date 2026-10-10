@@ -1,9 +1,9 @@
 ---
 aliases: [Dragonfly (KVS), Dragonfly KVS, dragonflydb, Dragonfly in-memory data store, Dashtable, VLL]
 tags: [term]
-maps: ["[[Storage]]"]
+maps: ["[[Databases]]"]
 status: draft
-updated: 2026-10-09
+updated: 2026-10-10
 ---
 # DragonflyDB（Dragonfly）
 

@@ -1,7 +1,7 @@
 ---
 aliases: [USENIX OSDI, Symposium on Operating Systems Design and Implementation, OSDI '26, OSDI '27]
 tags: [term]
-maps: ["[[Research]]"]
+maps: ["[[Research]]", "[[Operating System]]", "[[Distributed Systems]]"]
 status: draft
 updated: 2026-10-10
 ---

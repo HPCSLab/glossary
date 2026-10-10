@@ -1,9 +1,9 @@
 ---
 aliases: [device mapper, device-mapper, デバイスマッパー, dm, dmsetup, dm-crypt, dm-verity, dm-thin, dm-flakey, dm-log-writes, /dev/mapper]
 tags: [term]
-maps: ["[[Storage]]", "[[Operating System]]"]
+maps: ["[[Storage]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # Device Mapper（デバイスマッパー）
 

@@ -1,9 +1,9 @@
 ---
 aliases: [rocksdb, Memtable, メムテーブル, SST File, SSTファイル, SSTable, Column Family, カラムファミリ, Universal Compaction, FIFO Compaction, Merge Operator]
 tags: [term]
-maps: ["[[Storage]]"]
+maps: ["[[Databases]]"]
 status: draft
-updated: 2026-10-09
+updated: 2026-10-10
 ---
 # RocksDB
 

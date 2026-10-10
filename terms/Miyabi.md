@@ -17,7 +17,7 @@ Miyabiは、二種類の[[Compute Node|計算ノード]]からなる。Miyabi-G�
 共有のファイルシステムは、全ての記憶装置を[[NVMe]] SSDとした11.3PB（1.0TB/s）の[[Lustre]]（[[EXAScaler|DDN EXAScaler]]）である。OSはRocky Linux 9（ログインノードはRed Hat Enterprise Linux 9）、ジョブスケジューラは[[PBS|PBS Professional]]である。
 
 ## どこで出てくるか
-Miyabiは、筑波大学と東京大学の利用者が共同利用の制度を通じて使える大規模な計算資源である。運営者は、利用者のプログラムのGPUへの移行や、AIを用いた科学（AI for Science）の取り組みを支援する方針を示している。筑波大学計算科学研究センター自身のスーパーコンピュータである[[Pegasus]]や[[Sirius]]とは、運営の主体（JCAHPC）と規模が異なる。
+Miyabiは、筑波大学と東京大学の利用者が共同利用の制度を通じて使える大規模な計算資源である。運営者は、利用者のプログラムのGPUへの移行や、AIを用いた科学（[[AI for Science]]）の取り組みを支援する方針を示している。筑波大学計算科学研究センター自身のスーパーコンピュータである[[Pegasus]]や[[Sirius]]とは、運営の主体（JCAHPC）と規模が異なる。
 
 ## 関係
 - 使う / 使われる: [[GPU]], [[InfiniBand]], [[NVMe]], [[Parallel File System]]

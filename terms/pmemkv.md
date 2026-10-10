@@ -1,7 +1,7 @@
 ---
 aliases: [libpmemkv, PMemKV, cmap, vsmap, vcmap, csmap]
 tags: [term]
-maps: ["[[Storage]]"]
+maps: ["[[Databases]]"]
 status: draft
 updated: 2026-10-10
 ---

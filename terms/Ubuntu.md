@@ -1,7 +1,7 @@
 ---
 aliases: [ubuntu, Ubuntu LTS, Canonical, apt, APT, deb, Ubuntu Pro]
 tags: [term]
-maps: ["[[Operating System]]"]
+maps: ["[[System Administration]]"]
 status: draft
 updated: 2026-10-10
 ---

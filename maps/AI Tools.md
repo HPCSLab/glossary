@@ -1,6 +1,6 @@
 ---
 tags: [map]
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # AI Tools（AIツール）
 
@@ -10,13 +10,13 @@ updated: 2026-10-06
 - [[Claude Code]] — このノート群の作成にも用いている、エージェント型のプログラミング支援ツールである。
 
 ## モデルと対話型AI
-- [[Claude]] — Anthropicが開発する大規模言語モデルの系列である。
-- [[ChatGPT]] — OpenAIが開発した対話型の生成AIである。
+- [[Claude]] — Anthropicが開発する大規模言語モデルの系列であり、claude.ai やAPI、Claude Code から利用する。
+- [[ChatGPT]] — OpenAIのGPT系列のLLMを基盤とする対話型AIであり、LLMによる対話型AIを広く普及させた。
 
 ## コーディングエージェント
-- [[Claude Code]] — コードベースを読み、編集し、コマンドを実行して作業を進めるAnthropicのツールである。
-- [[Codex]] — OpenAIのコーディングエージェントである。
+- [[Claude Code]] — コードベースを読み、編集し、コマンドを実行して作業を進めるAnthropicのツールであり、プロジェクトへの指示を CLAUDE.md に書く。
+- [[Codex]] — OpenAIのコーディングエージェントであり、プロジェクトへの指示を AGENTS.md に書く。古い資料では2021年のコード生成モデルを指すことがある。
 
 ## 関連する分野
-- [[Machine Learning Systems]] — これらのツールの基盤であるLLMの仕組みを扱う。
+- [[Machine Learning Systems]] — これらのツールの基盤である[[LLM]]の仕組みを扱う。
 - [[Programming]] — これらのツールを用いて行うプログラミングを扱う。

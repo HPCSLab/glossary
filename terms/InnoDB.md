@@ -1,7 +1,7 @@
 ---
 aliases: [innodb, InnoDB Storage Engine, Doublewrite Buffer, ダブルライトバッファ, Buffer Pool, バッファプール, innodb_flush_log_at_trx_commit]
 tags: [term]
-maps: ["[[Storage]]"]
+maps: ["[[Databases]]"]
 status: draft
 updated: 2026-10-10
 ---

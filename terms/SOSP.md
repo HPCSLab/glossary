@@ -1,7 +1,7 @@
 ---
 aliases: [ACM SOSP, Symposium on Operating Systems Principles, SOSP '26]
 tags: [term]
-maps: ["[[Research]]"]
+maps: ["[[Research]]", "[[Operating System]]", "[[Distributed Systems]]"]
 status: draft
 updated: 2026-10-10
 ---

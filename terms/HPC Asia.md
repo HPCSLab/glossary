@@ -1,9 +1,9 @@
 ---
 aliases: [HPCAsia, HPC Asia 2027, International Conference on High Performance Computing in Asia-Pacific Region]
 tags: [term]
-maps: ["[[Research]]"]
+maps: ["[[Research]]", "[[Parallel Computing]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # HPC Asia
 
