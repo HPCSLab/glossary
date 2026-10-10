@@ -1,9 +1,9 @@
 ---
 aliases: [USENIX FAST, Conference on File and Storage Technologies, FAST '26]
 tags: [term]
-maps: ["[[Research]]"]
+maps: ["[[Research]]", "[[Storage]]", "[[HPC Storage]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # FAST
 

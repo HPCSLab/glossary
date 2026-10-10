@@ -1,9 +1,9 @@
 ---
 aliases: [EuroPar, Euro-Par Conference, International European Conference on Parallel and Distributed Computing]
 tags: [term]
-maps: ["[[Research]]"]
+maps: ["[[Research]]", "[[Parallel Computing]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # Euro-Par
 

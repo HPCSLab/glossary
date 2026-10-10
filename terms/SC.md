@@ -1,9 +1,9 @@
 ---
 aliases: [SC Conference, Supercomputing, Supercomputing Conference, The International Conference for High Performance Computing, Networking, Storage, and Analysis, SC26, Gordon Bell Prize, ゴードン・ベル賞]
 tags: [term]
-maps: ["[[Research]]"]
+maps: ["[[Research]]", "[[Parallel Computing]]", "[[HPC Storage]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # SC
 

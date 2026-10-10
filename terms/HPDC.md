@@ -1,9 +1,9 @@
 ---
 aliases: [ACM HPDC, International Symposium on High-Performance Parallel and Distributed Computing, HPDC 2026]
 tags: [term]
-maps: ["[[Research]]"]
+maps: ["[[Research]]", "[[Parallel Computing]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # HPDC
 
