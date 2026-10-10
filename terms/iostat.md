@@ -1,5 +1,5 @@
 ---
-aliases: [iostat -x, sysstat, %util, aqu-sz, r_await, w_await]
+aliases: [iostat -x, sysstat, "%util", aqu-sz, r_await, w_await]
 tags: [term]
 maps: ["[[Storage]]", "[[Operating System]]"]
 status: draft
