@@ -1,7 +1,7 @@
 ---
 aliases: [sqlite, sqlite3, SQLite3]
 tags: [term]
-maps: ["[[Storage]]"]
+maps: ["[[Databases]]"]
 status: draft
 updated: 2026-10-10
 ---

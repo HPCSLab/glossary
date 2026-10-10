@@ -1,7 +1,7 @@
 ---
 aliases: [Lightning Memory-Mapped Database, lmdb, MDB]
 tags: [term]
-maps: ["[[Storage]]"]
+maps: ["[[Databases]]"]
 status: draft
 updated: 2026-10-10
 ---

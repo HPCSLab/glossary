@@ -1,7 +1,7 @@
 ---
 aliases: [Google Spanner, Cloud Spanner, TrueTime, External Consistency, 外部一貫性, Commit Wait]
 tags: [term]
-maps: ["[[Distributed Systems]]"]
+maps: ["[[Distributed Systems]]", "[[Databases]]"]
 status: draft
 updated: 2026-10-10
 ---

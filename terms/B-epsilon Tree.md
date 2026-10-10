@@ -1,9 +1,9 @@
 ---
 aliases: [Bε-tree, Bε木, B^ε-tree, B-epsilon tree, Be-tree, Write-Optimized Data Structure, 書き込み最適化データ構造, Upsert, Fractal Tree, BetrFS, TokuDB]
 tags: [term]
-maps: ["[[Data Structures]]", "[[Storage]]"]
+maps: ["[[Data Structures]]", "[[Storage]]", "[[Databases]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # Bε-tree（Bε木）
 

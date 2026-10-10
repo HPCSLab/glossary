@@ -1,7 +1,7 @@
 ---
 aliases: [ベクトルDB, ベクトルデータベース, Vector DB, VectorDB, Vector Search, ベクトル検索, Similarity Search, 類似検索, Approximate Nearest Neighbor, ANN, 近似最近傍探索, HNSW, Hierarchical Navigable Small World, IVF, IVFFlat, DiskANN, Vamana, Faiss, Milvus, pgvector, Recall, 再現率]
 tags: [term]
-maps: ["[[Machine Learning Systems]]"]
+maps: ["[[Machine Learning Systems]]", "[[Databases]]"]
 status: draft
 updated: 2026-10-10
 ---

@@ -1,7 +1,7 @@
 ---
 aliases: [消失訂正符号, イレージャコーディング, Erasure Code, EC, Reed-Solomon, Reed-Solomon Code, リード・ソロモン符号, RS Code]
 tags: [term]
-maps: ["[[Storage]]", "[[HPC Storage]]"]
+maps: ["[[HPC Storage]]"]
 status: draft
 updated: 2026-10-10
 ---

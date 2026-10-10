@@ -1,7 +1,7 @@
 ---
 aliases: [KVS, キーバリューストア, Key-Value Database, LevelDB, Redis, memcached, Dynamo]
 tags: [term]
-maps: ["[[Storage]]", "[[Distributed Systems]]"]
+maps: ["[[Databases]]"]
 status: draft
 updated: 2026-10-10
 ---

@@ -1,7 +1,7 @@
 ---
 aliases: [duckdb]
 tags: [term]
-maps: ["[[Scientific Data]]"]
+maps: ["[[Scientific Data]]", "[[Databases]]"]
 status: draft
 updated: 2026-10-10
 ---
