@@ -1,5 +1,5 @@
 ---
-aliases: [Large Language Model, 大規模言語モデル, Transformer, トランスフォーマー, Attention, アテンション, Token, トークン, Prefill, Decode, 推論, Inference]
+aliases: [Large Language Model, 大規模言語モデル, Attention, アテンション, Token, トークン, Prefill, Decode, 推論, Inference]
 tags: [term]
 maps: ["[[Machine Learning Systems]]"]
 status: draft
