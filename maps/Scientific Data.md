@@ -20,10 +20,11 @@ updated: 2026-10-10
 - [[Apache Arrow]] — 表を列ごとに並べて表すメモリ上の標準の形式であり、Parquetと組み合わせて用いる。
 
 ## 扱う道具
-- [[NumPy]] — データを読み込んだ先の多次元配列である（[[Programming]]を参照）。
+- [[NumPy]] — HDF5やZarrから読み込んだデータを、多次元配列ndarrayとして保持し演算するPythonのライブラリである（[[Programming]]を参照）。
 - [[DuckDB]] — サーバを立てずにParquetなどのファイルをSQLで集計できる、組み込み型の分析向けデータベースである。
 
 ## 関連する分野
 - [[HPC Storage]] — Parallel HDF5やPnetCDFが用いるMPI-IOと、HPCにおける主要な格納先である[[Parallel File System|並列ファイルシステム]]を扱う。
 - [[Storage]] — クラウドにおける主要な格納先であるオブジェクトストレージを扱う。
 - [[Programming]] — Pythonと、データを扱うライブラリを扱う。
+- [[Databases]] — DuckDBを含む、キーバリューストアとデータベースを扱う。
