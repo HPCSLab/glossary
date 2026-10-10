@@ -1,7 +1,7 @@
 ---
 aliases: [cudnn, CUDA Deep Neural Network library]
 tags: [term]
-maps: ["[[Machine Learning Systems]]", "[[Parallel Computing]]"]
+maps: ["[[Machine Learning Systems]]"]
 status: draft
 updated: 2026-10-10
 ---

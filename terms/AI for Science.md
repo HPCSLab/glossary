@@ -1,7 +1,7 @@
 ---
 aliases: [AI4Science, AI4S, AIを用いた科学, 科学のためのAI, HPCとAIの融合, Surrogate Model, サロゲートモデル, AI Surrogate]
 tags: [term]
-maps: ["[[Parallel Computing]]", "[[Machine Learning Systems]]"]
+maps: ["[[Machine Learning Systems]]"]
 status: draft
 updated: 2026-10-10
 ---
