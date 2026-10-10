@@ -162,6 +162,9 @@ plugins:
     enabled: true
   - source: "@quartz-community/explorer"
     enabled: true
+    options:
+      # Hide tags (the default) and figures/; figures are embedded in term notes instead.
+      filterFn: '(node) => node.slugSegment !== "tags" && node.slugSegment !== "figures"'
     layout:
       position: left
       priority: 50
@@ -269,7 +272,7 @@ plugins:
       position: beforeBody
       priority: 15
       display: all
-  - source: "@quartz-community/obsidian-plugin-excalidraw"
+  - source: github:quartz-community/obsidian-plugin-excalidraw
     enabled: true
     options:
       enableInteraction: true
