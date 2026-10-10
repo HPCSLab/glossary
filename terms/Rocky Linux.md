@@ -1,9 +1,9 @@
 ---
 aliases: [rocky linux, Rocky, RHEL, Red Hat Enterprise Linux, CentOS, CentOS Stream, dnf, RPM, Rocky Enterprise Software Foundation]
 tags: [term]
-maps: ["[[Operating System]]"]
+maps: ["[[System Administration]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-10
 ---
 # Rocky Linux
 

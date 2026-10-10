@@ -1,7 +1,7 @@
 ---
 aliases: [Dynamic Host Configuration Protocol, BOOTP, DHCPリレー, DHCP Relay Agent, DHCPリース, DHCP Lease, DORA]
 tags: [term]
-maps: ["[[Network]]", "[[Operating System]]"]
+maps: ["[[System Administration]]"]
 status: draft
 updated: 2026-10-10
 ---

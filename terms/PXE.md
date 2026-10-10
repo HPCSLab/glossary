@@ -1,7 +1,7 @@
 ---
 aliases: [PXE Boot, PXEブート, Preboot Execution Environment, Preboot eXecution Environment, ネットワークブート, Network Boot, iPXE, NBP, Network Bootstrap Program, proxyDHCP]
 tags: [term]
-maps: ["[[Operating System]]"]
+maps: ["[[System Administration]]"]
 status: draft
 updated: 2026-10-10
 ---

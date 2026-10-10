@@ -1,7 +1,7 @@
 ---
 aliases: [PromQL, Node Exporter, node_exporter, Exporter, エクスポータ, Alertmanager, Pushgateway]
 tags: [term]
-maps: ["[[Operating System]]"]
+maps: ["[[System Administration]]"]
 status: draft
 updated: 2026-10-10
 ---

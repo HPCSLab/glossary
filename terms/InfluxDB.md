@@ -1,7 +1,7 @@
 ---
 aliases: [influxdb, InfluxDB 3, InfluxDB 3 Core, InfluxQL, Line Protocol, ラインプロトコル, Telegraf]
 tags: [term]
-maps: ["[[Operating System]]"]
+maps: ["[[System Administration]]"]
 status: draft
 updated: 2026-10-10
 ---

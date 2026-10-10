@@ -1,7 +1,7 @@
 ---
 aliases: [grafana, Grafana Labs, ダッシュボード, Dashboard]
 tags: [term]
-maps: ["[[Operating System]]"]
+maps: ["[[System Administration]]"]
 status: draft
 updated: 2026-10-10
 ---

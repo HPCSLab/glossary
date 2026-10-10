@@ -1,7 +1,7 @@
 ---
 aliases: [Intelligent Platform Management Interface, BMC, Baseboard Management Controller, ベースボード管理コントローラ, ipmitool, Serial over LAN, SOL, アウトオブバンド管理, Out-of-band Management]
 tags: [term]
-maps: ["[[Operating System]]"]
+maps: ["[[System Administration]]"]
 status: draft
 updated: 2026-10-10
 ---
