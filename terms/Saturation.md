@@ -12,6 +12,8 @@ updated: 2026-10-11
 ## 概要
 CPU、メモリの[[Bandwidth|バンド幅]]、ディスク、ネットワークなどの資源は、単位時間に処理できる仕事の量に上限を持つ。負荷を増やしていくと、はじめはスループットも比例して伸びるが、上限に近づくと伸びが止まり、横ばいになる。このとき資源は飽和しており、増やした分の仕事はキューで待たされる。[[Little's Law|リトルの法則]]によれば、システム内の仕事の数はスループットと滞在時間の積に等しい。スループットが上限で頭打ちになっているところに同時の仕事を増やすと、増えた分はそのまま[[Latency|レイテンシ]]の増加となって現れる。つまり、飽和した資源にさらに負荷をかけても、待ち時間が延びるだけで性能は上がらない。飽和した資源は、システム全体の[[Bottleneck|ボトルネック]]となる。
 
+![[Saturation Throughput and Latency.excalidraw]]
+
 Greggは、性能を分析する手順である[[Systems Performance|USEメソッド]]で、各資源の使用率（utilization）、飽和度（saturation）、エラー（errors）を調べることを提唱している。飽和度は、資源が処理しきれずに抱えている仕事の程度であり、待ち行列の長さや、待ち行列で待った時間として測る。CPUであれば実行可能状態で待っているスレッドの数（ランキュー長）がこれにあたる。
 
 ## どこで出てくるか
@@ -26,3 +28,4 @@ Greggは、性能を分析する手順である[[Systems Performance|USEメソ�
 
 ## 出典
 - [The USE Method - Brendan Gregg](https://www.brendangregg.com/usemethod.html)
+- [Quantitative System Performance, Chapter 5: Bounds on Performance (Lazowska et al., 1984)](https://homes.cs.washington.edu/~lazowska/qsp/Images/Chap_05.pdf)

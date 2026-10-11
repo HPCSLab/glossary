@@ -12,6 +12,8 @@ updated: 2026-10-11
 ## 概要
 処理は、CPUの演算、メモリの読み書き、ネットワークの通信、記憶装置へのI/Oなど、複数の資源や段階を経て進む。データが段階を順に流れる処理では、全体のスループットは最も遅い段階の処理能力を超えられない。この段階がボトルネックである。ボトルネックとなった資源は[[Saturation|飽和]]しており、他の資源には余裕がある。そのため、ボトルネック以外の資源をいくら速くしても全体の性能は上がらず、性能を改善するには、まずボトルネックを特定する必要がある。ボトルネックを解消すると、次に遅い資源が新たなボトルネックとなる。
 
+![[Bottleneck Pipeline.excalidraw]]
+
 日本語では、ボトルネックによって性能が制限されることを「律速」と言い、「メモリ律速」「I/O律速」のように制限している資源の名で呼ぶ。英語では memory-bound、I/O-bound のように bound を付ける。律速は、化学反応の全体の速さが最も遅い段階（律速段階、rate-determining step）で決まることに由来する語である。
 
 ## どこで出てくるか
@@ -28,3 +30,4 @@ updated: 2026-10-11
 - [The USE Method - Brendan Gregg](https://www.brendangregg.com/usemethod.html)
 - [Rate-determining step - Wikipedia](https://en.wikipedia.org/wiki/Rate-determining_step)
 - [Roofline: An Insightful Visual Performance Model for Multicore Architectures (Williams, Waterman, Patterson, CACM 2009)](https://doi.org/10.1145/1498765.1498785)
+- [Quantitative System Performance, Chapter 5: Bounds on Performance (Lazowska et al., 1984)](https://homes.cs.washington.edu/~lazowska/qsp/Images/Chap_05.pdf)
