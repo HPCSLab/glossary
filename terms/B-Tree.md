@@ -1,9 +1,9 @@
 ---
 aliases: [B Tree, B木, B-tree, B+ Tree, B+木, B+-tree, Btree]
 tags: [term]
-maps: ["[[Data Structures]]", "[[Storage]]", "[[Databases]]"]
+maps: ["[[Data Structures]]", "[[Databases]]"]
 status: draft
-updated: 2026-10-10
+updated: 2026-10-11
 ---
 # B-Tree（B木）
 
