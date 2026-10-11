@@ -1,9 +1,9 @@
 ---
 aliases: [GDB, GNU Debugger, GNUデバッガ, デバッガ, Debugger, Breakpoint, ブレークポイント, Backtrace, バックトレース, Core File, コアファイル, Core Dump, コアダンプ]
 tags: [term]
-maps: ["[[Operating System]]"]
+maps: ["[[Operating System]]", "[[Programming]]"]
 status: draft
-updated: 2026-10-10
+updated: 2026-10-11
 ---
 # gdb（GNU Debugger）
 
