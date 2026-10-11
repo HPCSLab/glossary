@@ -3,14 +3,14 @@ aliases: [GPU Direct Storage, GDS, cuFile, cuFileRead, cuFileWrite, nvidia-fs, B
 tags: [term]
 maps: ["[[Storage]]", "[[Machine Learning Systems]]"]
 status: draft
-updated: 2026-10-10
+updated: 2026-10-11
 ---
 # GPUDirect Storage（GDS）
 
 > 記憶装置と[[GPU]]のメモリの間で、CPUのメモリの中継（バウンスバッファ）を経ずに直接[[DMA]]でデータを転送する、NVIDIAの技術である。
 
 ## 概要
-通常、ファイルのデータをGPUで処理するには、まず記憶装置からCPUのメモリにデータを読み込み、それをGPUのメモリに複製する。このCPUのメモリの中間の領域をバウンスバッファと呼ぶ。GPUDirect Storageは、記憶装置とGPUのメモリの間に直接のデータの経路を作り、この中継を省く。これにより、システムの[[Bandwidth|バンド幅]]のボトルネックが緩和され、[[Latency|レイテンシ]]とCPUの負荷が減る。
+通常、ファイルのデータをGPUで処理するには、まず記憶装置からCPUのメモリにデータを読み込み、それをGPUのメモリに複製する。このCPUのメモリの中間の領域をバウンスバッファと呼ぶ。GPUDirect Storageは、記憶装置とGPUのメモリの間に直接のデータの経路を作り、この中継を省く。これにより、システムの[[Bandwidth|バンド幅]]の[[Bottleneck|ボトルネック]]が緩和され、[[Latency|レイテンシ]]とCPUの負荷が減る。
 
 アプリケーションは、cuFileと呼ばれるAPI（`cuFileHandleRegister` でファイルを登録し、`cuFileRead`、`cuFileWrite` で読み書きする）を用いる。[[Linux Kernel|カーネル]]側では、`nvidia-fs.ko` というドライバが、GPUのメモリのアドレスの変換とDMAの処理を担う。ファイルは、[[Page Cache|ページキャッシュ]]を経由しない `O_DIRECT`（[[Direct IO|Direct I/O]]）で開く必要がある。対応するファイルシステムには、[[ext4]]、[[XFS]]、[[Lustre]]、[[IBM Storage Scale|GPFS]]、[[BeeGFS]]、[[NFS]]などがある。直接の経路が使えない構成では、CPUのメモリを経由する互換モードに自動で切り替わるため、アプリケーションのコードを変えずに動作する。
 

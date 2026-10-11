@@ -3,7 +3,7 @@ aliases: [Cerebras Systems, セレブラス, WSE, Wafer-Scale Engine, WSE-3, WSE
 tags: [term]
 maps: ["[[Machine Learning Systems]]"]
 status: draft
-updated: 2026-10-10
+updated: 2026-10-11
 ---
 # Cerebras（WSE）
 
@@ -15,7 +15,7 @@ updated: 2026-10-10
 GPUとの最大の違いはメモリの構成にある。GPUは、演算器の外に置いた[[HBM]]にモデルの重みを置き、計算のたびにそこから読み出す。WSEは、演算器と同じウェハの上に分散して置いたSRAMに重みを置くため、メモリの[[Bandwidth|帯域]]が桁違いに大きい。WSE-3のSRAMの帯域は21PB/sとされ、NVIDIA H200のHBM3eの4.8TB/sの数千倍に当たる。一方、SRAMの容量は44GBにとどまり、HBMを持つGPUよりはるかに小さい。
 
 ## どこで出てくるか
-[[LLM]]の推論の高速化の文脈で現れる。LLMのデコードの段階は、トークンを一つ生成するたびに全ての重みを読み出すため、メモリの帯域で律速される。Cerebrasは、全ての重みをオンチップのSRAMに置くことでこの制約を緩め、Llama 4 Scoutで毎秒2,600トークン以上の出力速度を、第三者の計測（Artificial Analysis）で示したとしている。
+[[LLM]]の推論の高速化の文脈で現れる。LLMのデコードの段階は、トークンを一つ生成するたびに全ての重みを読み出すため、メモリの帯域で[[Bottleneck|律速]]される。Cerebrasは、全ての重みをオンチップのSRAMに置くことでこの制約を緩め、Llama 4 Scoutで毎秒2,600トークン以上の出力速度を、第三者の計測（Artificial Analysis）で示したとしている。
 
 ただし、SRAMの容量の小ささが制約となる。例えば、16ビットの重みで約140GBを要するLlama 3.1 70Bは一台のCS-3に収まらず、80層を4台のCS-3に分けて置く（[[Megatron-LM|パイプライン並列]]）。長い文脈の[[KV Cache|KVキャッシュ]]もSRAMの容量を圧迫する。性能の比較を読む際には、トークンの生成速度（[[TTFT]]や1要求あたりの毎秒のトークン数）が、メモリの容量と帯域のどちらの制約の下で得られた値なのか、何台の計算機を用いたのかを確かめる必要がある。示されている数値の多くは、Cerebras自身の発表である。
 

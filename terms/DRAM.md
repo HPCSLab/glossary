@@ -3,7 +3,7 @@ aliases: [Dynamic Random-Access Memory, ダイナミックRAM, 動的RAM, Main M
 tags: [term]
 maps: ["[[Parallel Computing]]"]
 status: draft
-updated: 2026-10-10
+updated: 2026-10-11
 ---
 # DRAM（Dynamic Random-Access Memory）
 
@@ -17,7 +17,7 @@ DRAMのセルは、1個のトランジスタと1個のコンデンサからな�
 DRAMには用途に応じた規格の系統がある。サーバやパソコンの主記憶にはDIMMに載せたDDR4やDDR5、モバイル機器や一部の小型の計算機には省電力のLPDDR、グラフィックスのカードにはGDDRが用いられる。DRAMのチップを積み重ねてプロセッサの近くに置き、幅の広いインタフェースで接続したものが[[HBM]]である。
 
 ## どこで出てくるか
-計算機の性能を考える際、DRAMは記憶階層の中間に位置する。目安として、DRAMへのアクセスの[[Latency|レイテンシ]]は約100ナノ秒であり、CPUのキャッシュより桁違いに遅く、[[SSD]]より桁違いに速い。多くのHPCのアプリケーションは、DRAMの[[Bandwidth|帯域]]で性能が律速される（[[Roofline Model|ルーフラインモデル]]を参照）。
+計算機の性能を考える際、DRAMは記憶階層の中間に位置する。目安として、DRAMへのアクセスの[[Latency|レイテンシ]]は約100ナノ秒であり、CPUのキャッシュより桁違いに遅く、[[SSD]]より桁違いに速い。多くのHPCのアプリケーションは、DRAMの[[Bandwidth|帯域]]で性能が[[Bottleneck|律速]]される（[[Roofline Model|ルーフラインモデル]]を参照）。
 
 同じDRAMでも、規格によって帯域は大きく異なる。例えば、データセンター向けの[[GPU]]がHBMで数TB/sの帯域を得るのに対し、LPDDR5xを用いる[[DGX Spark]]の帯域は273GB/sである。また、ファイルのデータは[[Page Cache|ページキャッシュ]]としてDRAMに置かれ、[[Intel Optane Persistent Memory|永続メモリ]]や[[CXL]]で接続したメモリは、DRAMとの容量・速度・価格の違いによって記憶階層に位置付けられる。
 
