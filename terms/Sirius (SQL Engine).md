@@ -19,7 +19,7 @@ DuckDBに組み込んだ場合、DuckDBの問い合わせは最適化の段階�
 ## どこで出てくるか
 GPUによるデータ分析の性能を論じる場面で現れる。Siriusを提案した論文「Rethinking Analytical Processing in the GPU Era」はCIDR 2026で発表された。この論文は、GPUのメモリの大容量化、GPUとの間の相互接続とI/Oの高速化、cuDFなどのライブラリの成熟によって、GPUを分析処理に用いる障壁が取り除かれたと主張する。単一ノードのDuckDBに組み込んだ場合、分析処理のベンチマークであるTPC-HとClickBenchで、費用あたりの性能がそれぞれ8.3倍と7.4倍になったと報告している。2025年12月には、GH200 Grace Hopper Superchipを用いてClickBenchの記録を更新したとNVIDIAが発表している。
 
-利用するにはNVIDIAのGPU（Turing世代以降）と[[CUDA]]が必要であり、ファイルの読み込みには[[io_uring]]と、`O_DIRECT` による[[Direct I/O]]に対応したファイルシステムを要する。
+利用するにはNVIDIAのGPU（Turing世代以降）と[[CUDA]]が必要であり、ファイルの読み込みには[[io_uring]]と、`O_DIRECT` による[[Direct IO|Direct I/O]]に対応したファイルシステムを要する。
 
 ## 関係
 - 前提: [[CUDA]]
