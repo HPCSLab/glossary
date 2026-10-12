@@ -1,6 +1,6 @@
 ---
 tags: [map]
-updated: 2026-10-10
+updated: 2026-10-13
 ---
 # Scientific Data（科学データ）
 
@@ -22,6 +22,7 @@ updated: 2026-10-10
 
 ## 扱う道具
 - [[NumPy]] — HDF5やZarrから読み込んだデータを、多次元配列ndarrayとして保持し演算するPythonのライブラリである（[[Programming]]を参照）。
+- [[pandas]] — CSVやParquetの表をDataFrameとして読み込み、集計するPythonのライブラリである（[[Programming]]を参照）。
 - [[DuckDB]] — サーバを立てずにParquetなどのファイルをSQLで集計できる、組み込み型の分析向けデータベースである。
 
 ## 関連する分野

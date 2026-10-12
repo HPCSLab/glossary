@@ -3,7 +3,7 @@ aliases: [matplotlib, pyplot, plt, Figure, Axes, savefig]
 tags: [term]
 maps: ["[[Programming]]", "[[Research]]"]
 status: draft
-updated: 2026-10-10
+updated: 2026-10-13
 ---
 # Matplotlib
 
@@ -17,7 +17,7 @@ Matplotlibの図は階層的な構造を持つ。Figureは図全体を表し、�
 作成した図は `savefig()` で、PNG、PDF、SVGなどの形式で保存できる。[[TikZ|PGF]]の形式で出力すると、図の中の文字を[[LaTeX]]で組版させられ、論文の本文と同じフォントを図の中でも用いられる。
 
 ## どこで出てくるか
-Matplotlibは、ベンチマークの結果や実験の測定値を、論文やスライドのグラフにする際に用いられる。pandasのDataFrameなども、NumPyの配列に変換して、あるいは `data` 引数で列の名前を指定して描画できる。図はスクリプトとして作成されるため、そのスクリプトを実験のデータとともに保存しておけば、データを更新したときに同じ図を作り直せる。
+Matplotlibは、ベンチマークの結果や実験の測定値を、論文やスライドのグラフにする際に用いられる。[[pandas]]のDataFrameなども、NumPyの配列に変換して、あるいは `data` 引数で列の名前を指定して描画できる。図はスクリプトとして作成されるため、そのスクリプトを実験のデータとともに保存しておけば、データを更新したときに同じ図を作り直せる。
 
 ## 関係
 - 上位概念: [[Python]]

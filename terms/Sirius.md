@@ -3,11 +3,13 @@ aliases: [PACS12.0, PACS 12.0, シリウス, 筑波大学 Sirius]
 tags: [term]
 maps: ["[[Parallel Computing]]"]
 status: draft
-updated: 2026-10-06
+updated: 2026-10-13
 ---
 # Sirius（PACS12.0）
 
 > 筑波大学計算科学研究センターが2026年3月に運用を開始した、AMD Instinct MI300A APUを用いるユニファイドメモリ型のスーパーコンピュータである。
+
+GPUで動くSQLの実行エンジンのSiriusは[[Sirius (SQL Engine)]]を参照。
 
 ## 概要
 Siriusは、筑波大学計算科学研究センターが開発してきたPACSシリーズの第12世代（PACS12.0）にあたり、2026年3月27日に運用を開始した。国立大学に導入されたスーパーコンピュータとして初めて、AMDのAPUを採用している。

@@ -3,7 +3,7 @@ aliases: [Apache Parquet, .parquet, 列指向ファイル形式, Columnar Storag
 tags: [term]
 maps: ["[[Scientific Data]]"]
 status: draft
-updated: 2026-10-10
+updated: 2026-10-13
 ---
 # Parquet（Apache Parquet）
 
@@ -17,7 +17,7 @@ CSVのような行指向の形式では、一行のすべての列が並んで�
 Parquetは、TwitterとClouderaの共同開発として始まり、GoogleのDremelの論文の、入れ子構造のデータを列に分解する手法を取り入れている。2013年に最初の版が公開され、現在はApache Software Foundationのプロジェクトである。
 
 ## どこで出てくるか
-データ分析の基盤で、データを保存する標準的な形式として用いられる。[[Python]]では、[[Apache Arrow]]のPythonの実装であるPyArrowや、pandasから読み書きする。[[HDF5]]や[[netCDF]]が多次元の配列を対象とするのに対し、Parquetは列ごとに型を持つ表を対象とする。HPCでも、I/Oのトレースのツールである[[Recorder]]が、トレースをParquetに変換して他の分析の道具に渡す機能を備えている。
+データ分析の基盤で、データを保存する標準的な形式として用いられる。[[Python]]では、[[Apache Arrow]]のPythonの実装であるPyArrowや、[[pandas]]から読み書きする。[[HDF5]]や[[netCDF]]が多次元の配列を対象とするのに対し、Parquetは列ごとに型を持つ表を対象とする。HPCでも、I/Oのトレースのツールである[[Recorder]]が、トレースをParquetに変換して他の分析の道具に渡す機能を備えている。
 
 ## 関係
 - 対比: [[HDF5]]（多次元の配列を格納するのに対し、Parquetは列からなる表を格納する）
