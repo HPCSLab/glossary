@@ -3,7 +3,7 @@ aliases: [Arrow, PyArrow, pyarrow, Arrow IPC, Feather, Arrow Columnar Format, �
 tags: [term]
 maps: ["[[Scientific Data]]"]
 status: draft
-updated: 2026-10-10
+updated: 2026-10-13
 ---
 # Apache Arrow
 
@@ -17,7 +17,7 @@ Arrowの形式でファイルに書き出したものがArrow IPCの形式であ
 Arrowは2016年にApache Software Foundationのプロジェクトとして発表された。C++、Java、Go、[[Rust]]などの言語ごとの実装があり、[[Python]]のPyArrowはC++の実装の上に作られている。
 
 ## どこで出てくるか
-[[Parquet]]と組み合わせて現れることが多い。Parquetが保存のために圧縮・符号化したディスク上の形式であり、読むたびに復号が要るのに対し、Arrowは計算に直接使うためのメモリ上の形式である。そのため、Parquetのファイルを読み込んでArrowの表にして処理する、という流れが一般的であり、PyArrowはParquetの読み書きの関数（`read_table()`、`write_table()`）も備える。pandasのDataFrameとの相互変換もできる。
+[[Parquet]]と組み合わせて現れることが多い。Parquetが保存のために圧縮・符号化したディスク上の形式であり、読むたびに復号が要るのに対し、Arrowは計算に直接使うためのメモリ上の形式である。そのため、Parquetのファイルを読み込んでArrowの表にして処理する、という流れが一般的であり、PyArrowはParquetの読み書きの関数（`read_table()`、`write_table()`）も備える。[[pandas]]のDataFrameとの相互変換もできる。
 
 ## 関係
 - 対比: [[Parquet]]（ディスク上の保存のための形式であるのに対し、Arrowはメモリ上の計算のための形式である）
