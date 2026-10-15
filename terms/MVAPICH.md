@@ -3,7 +3,7 @@ aliases: [MVAPICH2, MVAPICH2-GDR, MVAPICH2-X, MVAPICH-Plus]
 tags: [term]
 maps: ["[[Parallel Computing]]"]
 status: draft
-updated: 2026-10-10
+updated: 2026-10-16
 ---
 # MVAPICH
 
@@ -15,7 +15,7 @@ MVAPICHは、MPICHを基にしてオハイオ州立大学が開発するMPIの�
 MVAPICHは用途ごとの派生版を持つ。MVAPICH2-GDRは、NVIDIAやAMDの[[GPU]]を持つクラスタと、GPUを用いる深層学習のアプリケーション向けに最適化した版である。MVAPICH2-Xは、MPIに加えて[[OpenSHMEM]]、UPC、UPC++などの[[PGAS]]のモデルを一つの実行環境で扱えるようにしたものである。長くMVAPICH2の名で配布されてきたが、3.0の系列から名称はMVAPICHに改められ、MVAPICH2-GDRとMVAPICH2-Xの機能はMVAPICH-Plusに統合された。
 
 ## どこで出てくるか
-スーパーコンピュータやInfiniBandのクラスタで、利用できるMPIの一つとして `module` で選ぶ場面で出会う。開発元はMPIなどの通信性能を測る[[OSU Micro-Benchmarks]]も配布しており、そのベンチマークは他のMPIの実装の評価にも広く用いられる。MPIの通信の最適化を扱う論文では、[[Open MPI]]やMPICHと並ぶ比較対象として現れる。開発元の発表では、2026年10月の時点で94か国の3,500以上の組織で利用されている。
+スーパーコンピュータやInfiniBandのクラスタで、利用できるMPIの一つとして `module` で選ぶ場面で現れる。開発元はMPIなどの通信性能を測る[[OSU Micro-Benchmarks]]も配布しており、そのベンチマークは他のMPIの実装の評価にも広く用いられる。MPIの通信の最適化を扱う論文では、[[Open MPI]]やMPICHと並ぶ比較対象として現れる。開発元の発表では、2026年10月の時点で94か国の3,500以上の組織で利用されている。
 
 ## 関係
 - 上位概念: [[MPI]]（MVAPICHはMPIの実装である）
