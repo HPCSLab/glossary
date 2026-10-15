@@ -1,9 +1,9 @@
 ---
-aliases: [ベクトルDB, ベクトルデータベース, Vector DB, VectorDB, Vector Search, ベクトル検索, Similarity Search, 類似検索, Approximate Nearest Neighbor, ANN, 近似最近傍探索, HNSW, Hierarchical Navigable Small World, IVF, IVFFlat, DiskANN, Vamana, Faiss, Milvus, pgvector, Recall, 再現率]
+aliases: [ベクトルDB, ベクトルデータベース, Vector DB, VectorDB, Vector Search, ベクトル検索, Similarity Search, 類似検索, Approximate Nearest Neighbor, ANN, 近似最近傍探索, HNSW, Hierarchical Navigable Small World, IVF, IVFFlat, Faiss, Milvus, pgvector, Recall, 再現率]
 tags: [term]
 maps: ["[[Machine Learning Systems]]", "[[Databases]]"]
 status: draft
-updated: 2026-10-10
+updated: 2026-10-16
 ---
 # Vector Database（ベクトルDB）
 
@@ -17,7 +17,7 @@ updated: 2026-10-10
 ## どこで出てくるか
 ベクトルDBは、文書の埋め込みから関係する文書を探して言語モデルに与える[[RAG|検索拡張生成（RAG）]]、推薦、画像の類似検索などに用いられる。専用のベクトルDBには、例えばMilvusがある。既存のデータベースの拡張として、PostgreSQLのpgvectorがあり、他のデータと同じデータベースでベクトルを扱える。類似検索のライブラリとしては、MetaのFaissがあり、一部のアルゴリズムは[[GPU]]で動く。
 
-ストレージの観点では、索引をメモリに置く方式では、扱えるデータの規模がメモリの容量に制約される。DiskANN（NeurIPS 2019）は、グラフの索引Vamanaを[[SSD]]に置くことで、64GBのメモリと安価なSSDを備えた一台の計算機で、10億個のベクトルを扱い、平均3ミリ秒未満の[[Latency|レイテンシ]]で毎秒5,000件以上の問い合わせに応えたと報告している。Milvusも、索引の種類としてDiskANNを選べる。
+ストレージの観点では、索引をメモリに置く方式では、扱えるデータの規模がメモリの容量に制約される。[[DiskANN]]（NeurIPS 2019）は、グラフの索引Vamanaを[[SSD]]に置くことで、64GBのメモリと安価なSSDを備えた一台の計算機で、10億個のベクトルを扱い、平均3ミリ秒未満の[[Latency|レイテンシ]]で毎秒5,000件以上の問い合わせに応えたと報告している。Milvusも、索引の種類としてDiskANNを選べる。
 
 ## 関係
 - 前提: [[Embedding]]
