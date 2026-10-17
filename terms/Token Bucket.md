@@ -1,7 +1,7 @@
 ---
 aliases: [トークンバケット, Token Bucket Filter, TBF, トークンバケットフィルタ, NRS TBF, Rate Limiting, レート制限]
 tags: [term]
-maps: ["[[Network]]", "[[HPC Storage]]"]
+maps: ["[[Network]]"]
 status: draft
 updated: 2026-10-17
 ---
