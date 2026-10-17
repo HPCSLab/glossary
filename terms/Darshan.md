@@ -1,9 +1,9 @@
 ---
 aliases: [darshan, darshan-runtime, darshan-util, darshan-parser, darshan-job-summary, PyDarshan, DXT, Darshan eXtended Tracing, I/O Characterization, I/Oの特性評価]
 tags: [term]
-maps: ["[[HPC Storage]]", "[[Parallel Computing]]"]
+maps: ["[[HPC Storage]]"]
 status: draft
-updated: 2026-10-10
+updated: 2026-10-17
 ---
 # Darshan
 

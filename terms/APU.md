@@ -1,9 +1,9 @@
 ---
 aliases: [AMD APU, Accelerated Processing Unit, MI300A, AMD Instinct MI300A, Unified Memory, ユニファイドメモリ, HSA, Heterogeneous System Architecture, Zero-copy]
 tags: [term]
-maps: ["[[Parallel Computing]]", "[[Machine Learning Systems]]"]
+maps: ["[[Parallel Computing]]"]
 status: draft
-updated: 2026-10-10
+updated: 2026-10-17
 ---
 # APU（AMD APU）
 

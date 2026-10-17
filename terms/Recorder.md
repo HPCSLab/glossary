@@ -1,9 +1,9 @@
 ---
 aliases: [Recorder 2.0, recorder-viz, recorder-report, I/O Tracing, I/Oトレース]
 tags: [term]
-maps: ["[[HPC Storage]]", "[[Parallel Computing]]"]
+maps: ["[[HPC Storage]]"]
 status: draft
-updated: 2026-10-10
+updated: 2026-10-17
 ---
 # Recorder
 

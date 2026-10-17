@@ -1,9 +1,9 @@
 ---
 aliases: [Network File System, NFSv3, NFSv4, NFSv4.1, pNFS, Parallel NFS, actimeo]
 tags: [term]
-maps: ["[[HPC Storage]]", "[[Network]]"]
+maps: ["[[HPC Storage]]"]
 status: draft
-updated: 2026-10-16
+updated: 2026-10-17
 ---
 # NFS
 
