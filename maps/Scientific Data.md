@@ -1,6 +1,6 @@
 ---
 tags: [map]
-updated: 2026-10-13
+updated: 2026-10-17
 ---
 # Scientific Data（科学データ）
 
@@ -24,6 +24,7 @@ updated: 2026-10-13
 - [[NumPy]] — HDF5やZarrから読み込んだデータを、多次元配列ndarrayとして保持し演算するPythonのライブラリである（[[Programming]]を参照）。
 - [[pandas]] — CSVやParquetの表をDataFrameとして読み込み、集計するPythonのライブラリである（[[Programming]]を参照）。
 - [[DuckDB]] — サーバを立てずにParquetなどのファイルをSQLで集計できる、組み込み型の分析向けデータベースである。
+- [[Dask]] — NumPyの配列やpandasの表をチャンクに分け、タスクグラフとして並列に処理するライブラリであり、メモリに載らないZarrやnetCDFの配列の解析に用いる。
 
 ## 関連する分野
 - [[HPC Storage]] — Parallel HDF5やPnetCDFが用いるMPI-IOと、HPCにおける主要な格納先である[[Parallel File System|並列ファイルシステム]]を扱う。
