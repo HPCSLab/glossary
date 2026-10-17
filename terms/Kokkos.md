@@ -3,7 +3,7 @@ aliases: [Kokkos Core, Kokkos Kernels, Kokkos::View, parallel_for, parallel_redu
 tags: [term]
 maps: ["[[Parallel Computing]]"]
 status: draft
-updated: 2026-10-11
+updated: 2026-10-18
 ---
 # Kokkos
 
@@ -17,7 +17,7 @@ updated: 2026-10-11
 Kokkosの特徴は、計算の割り当てだけでなく、データの並べ方（レイアウト）も実行空間に合わせて切り替える点にある。原論文は、移植の主な障害は並列の起動の仕方よりもメモリのアクセスパターンにあると論じた。二次元のViewは、CPUでは一つのスレッドが連続した要素をたどれるように行優先（`LayoutRight`）で、GPUでは同じワープの隣り合うスレッドが隣り合う要素を読み、アクセスがまとめられるように列優先（`LayoutLeft`）で配置される。これは、CPUの[[Cache|キャッシュ]]とGPUのメモリ[[Bandwidth|帯域]]を、同じソースコードのままそれぞれ有効に使うための工夫である。
 
 ## どこで出てくるか
-米国のエクサスケール計算の計画（Exascale Computing Project）の一部として開発が進められ、異なる種類のGPUを搭載するエクサスケール機でのアプリケーションの性能可搬性を支えた。分子動力学のLAMMPSなどがKokkosによるGPU対応を持つ。線形代数の演算を提供するKokkos Kernelsや、性能を計測するKokkos Toolsも同じプロジェクトで開発されている。現在はLinux Foundation傘下のHigh Performance Software Foundation（HPSF）のプロジェクトである。
+米国のエクサスケール計算の計画（Exascale Computing Project）の一部として開発が進められ、異なる種類のGPUを搭載するエクサスケール機でのアプリケーションの性能可搬性を支えた。[[N-Body Simulation|分子動力学]]のLAMMPSなどがKokkosによるGPU対応を持つ。線形代数の演算を提供するKokkos Kernelsや、性能を計測するKokkos Toolsも同じプロジェクトで開発されている。現在はLinux Foundation傘下のHigh Performance Software Foundation（HPSF）のプロジェクトである。
 
 ## 関係
 - 上位概念: [[Performance Portability]]
