@@ -1,6 +1,6 @@
 ---
 tags: [map]
-updated: 2026-10-11
+updated: 2026-10-17
 ---
 # Network（ネットワーク）
 
@@ -33,6 +33,7 @@ updated: 2026-10-11
 ## 並列計算の通信
 - [[MPI]] — 並列計算のためのメッセージ通信の標準規格である。
 - [[Collective Communication]] — 全プロセスが参加する通信であり、そのアルゴリズムが性能を左右する。
+- [[SHARP]] — 集団通信のリダクションをInfiniBandのスイッチの中で行い、Allreduceでネットワークを通るデータとノードの計算を減らす技術である。
 - [[NCCL]] — GPUの間の集団通信を、NVLinkやInfiniBandなどの接続に合わせて行うNVIDIAのライブラリである。
 
 ## RPC

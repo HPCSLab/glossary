@@ -1,6 +1,6 @@
 ---
 tags: [map]
-updated: 2026-10-16
+updated: 2026-10-17
 ---
 # Parallel Computing（並列計算）
 
@@ -53,6 +53,7 @@ updated: 2026-10-16
 
 ## ノード間の通信
 - [[Collective Communication]] — 全プロセスが参加する通信であり、同期点として性能を左右する。
+- [[SHARP]] — Allreduceなどの足し合わせをスイッチが行い、集団通信を高速化するInfiniBandの機能である。
 - [[RDMA]] — 双方のOSを介さずにNICがメモリ間でデータを直接転送する仕組みであり、片側通信の基盤である。
 - [[InfiniBand]] — RDMAを基本機能として備え、HPCのノード間接続に広く用いられるネットワークの規格である。
 - [[GPUDirect RDMA]] — NICなどの[[PCIe]]の装置がGPUのメモリを直接読み書きできるようにする技術である。
