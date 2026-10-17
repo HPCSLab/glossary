@@ -1,9 +1,9 @@
 ---
 aliases: [NVIDIA Collective Communications Library, nccl, RCCL, nccl-tests, NCCL_DEBUG]
 tags: [term]
-maps: ["[[Machine Learning Systems]]", "[[Network]]"]
+maps: ["[[Machine Learning Systems]]", "[[Network]]", "[[Parallel Computing]]"]
 status: draft
-updated: 2026-10-10
+updated: 2026-10-17
 ---
 # NCCL（NVIDIA Collective Communications Library）
 
